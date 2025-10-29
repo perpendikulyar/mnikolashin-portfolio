@@ -6,7 +6,7 @@ import Button from "../Button";
 // Local Data
 import data from "../../data/portfolio.json";
 
-const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
+const Header = ({ handleWorkScroll, handleCreativeScroll, handleBadmintintonScroll, handleEduScroll, isBlog }) => {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -69,15 +69,17 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             >
               {!isBlog ? (
                 <div className="grid grid-cols-1">
-                  <Button onClick={handleWorkScroll}>Work</Button>
-                  <Button onClick={handleAboutScroll}>About</Button>
+                  <Button onClick={handleWorkScroll}>Работы</Button>
+                  <Button onClick={handleEduScroll}>Консалтинг</Button>
+                  <Button onClick={handleCreativeScroll}>Покасты и музыка</Button>
+                  <Button onClick={handleBadmintintonScroll}>Бадминтон</Button>
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
                   {showResume && (
                     <Button
                       onClick={() =>
-                        window.open("mailto:hello@chetanverma.com")
+                        window.open("mailto:perpendikulyar@gmail.com")
                       }
                     >
                       Resume
@@ -85,9 +87,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:hello@chetanverma.com")}
+                    onClick={() => window.open("mailto:perpendikulyar@gmail.com")}
                   >
-                    Contact
+                    Написать
                   </Button>
                 </div>
               ) : (
@@ -108,7 +110,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:hello@chetanverma.com")}
+                    onClick={() => window.open("mailto:perpendikulyar@gmail.com")}
                   >
                     Contact
                   </Button>
@@ -119,7 +121,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         )}
       </Popover>
       <div
-        className={`mt-10 hidden flex-row items-center justify-between sticky ${
+        className={`mt-10 laptop:mx-4 hidden flex-row items-center justify-between ${
           theme === "light" && "bg-white"
         } dark:text-white top-0 z-10 tablet:flex`}
       >
@@ -127,12 +129,14 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           onClick={() => router.push("/")}
           className="font-medium cursor-pointer mob:p-2 laptop:p-0"
         >
-          {name}.
+          {name}
         </h1>
         {!isBlog ? (
           <div className="flex">
-            <Button onClick={handleWorkScroll}>Work</Button>
-            <Button onClick={handleAboutScroll}>About</Button>
+            <Button onClick={handleWorkScroll}>Работы</Button>
+            <Button onClick={handleEduScroll}>Консалтинг</Button>
+            <Button onClick={handleCreativeScroll}>Подкасты и музыка</Button>
+            <Button onClick={handleBadmintintonScroll}>Бадминтон</Button>
             {showBlog && (
               <Button onClick={() => router.push("/blog")}>Blog</Button>
             )}
@@ -145,8 +149,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
-              Contact
+            <Button onClick={() => window.open("mailto:perpendikulyar@gmail.com")}>
+              Написать
             </Button>
             {mounted && theme && data.darkMode && (
               <Button
@@ -174,7 +178,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
+            <Button onClick={() => window.open("mailto:perpendikulyar@gmail.com")}>
               Contact
             </Button>
 

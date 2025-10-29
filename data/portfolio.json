@@ -1,1 +1,135 @@
-{"name":"Chetan","headerTaglineOne":"Hello 👋","headerTaglineTwo":"I'm Chetan Verma - curious","headerTaglineThree":"designer and devloper","headerTaglineFour":" based in New Delhi, India.","showCursor":true,"showBlog":true,"darkMode":true,"showResume":true,"socials":[{"id":"1","title":"Github","link":"https://github.com/chetanverma16"},{"id":"2","title":"LinkedIn","link":"https://www.linkedin.com/in/chetanverma7/"},{"id":"3","title":"Twitter","link":"https://twitter.com/realchetanverma"},{"id":"4","title":"Blog","link":"https://blog.chetanverma.com/"},{"id":"5","title":"Email","link":"mailto:hello@chetanverma.com"}],"projects":[{"id":"1","title":"Project One Test","description":"Web Design","imageSrc":"https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"2","title":"Project Two","description":"Web Development","imageSrc":"https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTY3ODl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"3","title":"Project Three","description":"Design","imageSrc":"https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"4","title":"Project Four","description":"Marketing","imageSrc":"https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"5","title":"Project Five","description":"Development","imageSrc":"https://images.unsplash.com/photo-1534239143101-1b1c627395c5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzZ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"6","title":"Project Six","description":"Design & Development","imageSrc":"https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"}],"services":[{"id":"1","title":"Art Direction","description":"We help with the creation and development of online advertising ideas, with particular focus on their visual appearance."},{"id":"2","title":"Branding","description":"We design key brand elements such as the logo, color scheme, typography, and other design components that makes your brand stand out from competitors."},{"id":"3","title":"Web Design","description":"We build and optimize your online presence.  Website is the digital entry point into your business and a powerful revenue channel."},{"id":"4","title":"3D Design","description":"We combine creative design and technical skills to build striking 3D visualisations that bring your project to life."}],"aboutpara":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.","resume":{"tagline":"👋  I'm a software engineer, product designer.","description":"I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.","experiences":[{"id":"1","dates":"March 2022 - Present","type":"Full Time","position":"Frontend Engineer at X","bullets":"Bullet One, Bullet Two"},{"id":"d495c23b-4f65-479a-9b8a-cfbc1c089725","dates":"July 2020 - March 2022","type":"Full Time","position":"Frontend Engineer at X","bullets":"Worked on the frontend of a React application, Worked on the frontend of a React application"}],"education":{"universityName":"University X","universityDate":"2016-2020","universityPara":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"},"languages":["Javascript","HTML5","CSS","Python","Go"],"frameworks":["React","Typescript","NodeJs"],"others":["Figma","AdobeXD","AWS"]}}
+{
+  "name": "Михаил Николашин",
+  "headerTaglineOne": "Привет 👋",
+  "headerTaglineTwo": "Я — Михаил Николашин",
+  "headerTaglineZero": "Alexander Grom, Senior Product Manager, Подкастер, Ментор, Саунд-дизайнер, Бадминтонист",
+  "headerTaglineThree": "10+ развиваю медийные продукты и платформы с пользовательским контентом",
+  "headerTaglineFour": "Специализация: монетизация и рекламные технологии, продуктовый-дизайн, работа с аудиторией и сообществом, рекомендательные системы",
+  "headerTaglineFive": "Преподаю продакт-менеджмент, а также был ментором для выпускных проектов студентов",
+  "headerTaglineSix": "Развиваю собственный подаст про креативных личностей",
+  "headerTaglineSeven": "Играю в бадминтон и выступаю на соревнованиях",
+  "headerTaglineLast": "Москва, Россия",
+  "showCursor": false,
+  "showBlog": false,
+  "darkMode": true,
+  "showResume": false,
+  "socials": [
+    {
+      "id": "1",
+      "title": "Telegram",
+      "link": "https://t.me/mnikolashin"
+    },
+    {
+      "id": "2",
+      "title": "Подкаст Кита и Грома",
+      "link": "https://st.zvuk.com/podkast-kita-i-groma"
+    },
+    { "id": "3", "title": "Email", "link": "mailto:perpendikulyar@gmail.com" }
+  ],
+  "projects": [
+    {
+        "id": "1",
+        "imageSrc": "/images/rcs.png",
+        "title": "LiveJournal: Рекомендательные сервисы",
+        "description": "hello"
+    },
+    {
+        "id": "2",
+        "imageSrc": "/images/paid.png",
+        "title": "LiveJournal: Платные инструменты",
+        "description": "hello"
+    },
+    {
+        "id": "3",
+        "imageSrc": "/images/author.png",
+        "title": "LiveJournal: Сервисы для авторов",
+        "description": "hello"
+    }
+  ],
+  "creative": [
+    {
+      "id": "1",
+      "title": "Подкаст Кита и Грома",
+      "img": "/images/kit-i-grom.png",
+      "description": "Креативный продакшн, подбор тем и гостей, написание сценариев, саунд-дизайн, монтаж, сведение, музыка, визульное оформление",
+      "url": "https://st.zvuk.com/podkast-kita-i-groma"
+    },
+    {
+      "id": "2",
+      "title": "ProductCamp Podcast",
+      "img": "/images/pc-podcast.png",
+      "description": "Монтаж и сведение, саунд-дизайн, музыка",
+      "url": "https://productcamppodcast.mave.digital/?utm_source=michael_nikolashin_portfolio"
+    },
+    {
+      "id": "3",
+      "title": "Alexander Grom",
+      "img": "/images/alex-grom.jpeg",
+      "description": "Артистический псевдоним, музыкальный продакшн, саунд-дизайн, запись, сведение, монтаж",
+      "url": "https://t.me/real_alexander_grom"
+    }
+  ],
+  "powers": [
+    "разработка стратегии, формирование вижна и роудмепа продукта",
+    "управление продуктовыми циклами от идеи до масштабирования",
+    "постановка OKR, приоритезация фич и планирование",
+    "продуктовые исследования, работа с сегментами, CJM, A/B тесты",
+    "развитие UGC-платформ и работа с комьюнити",
+    "data-driven подход + креативное мышление",
+    "продуктовый дизайн, UX/UI, прототипирование интерфейсов и знание дизайн систем",
+    "Управление проектами, Agile- и другие методологии, постороение продуктовой команды",
+    "запуск и монетизация коммерческих проектов",
+    "Аналитика: BI-инструменты, SQL, построение своей системы аналитики (event-based)",
+    "Разработка: TS, JS, PHP, PostgreSQL, Dart, Python — Middle-уровень",
+    "Продуктовый маркетинг: построение стратегии, работа с аудиторией",
+    "Саунд-дизайн и музыкального продакшен"
+  ],
+  "badminton": {
+    "text": "Я играю в бадминтон на полу-профессиональном уровне и выступаю на соревнованиях. Играю в одиночных и парных разрядах, но больше люблю одиночки. Занимаюсь у крутых именитых тренеров. И вообще, очень люблю эту игру!",
+    "btnText": "Позвать меня на спарринг",
+    "btnLink": "https://t.me/mnikolashin"
+  },
+  "edu": {
+    "first": "Консультирую владельцев продуктов с 2021 года. Начинал как преподаватель и наставник в GeekBrains — многие студенты получили классные офферы в крупных компаниях. В GB вел курсы по основам продуктового менеджмента, Agile-методологиям, юнит-экономике, работе с командой и стратегическому планированию. Также был наставником на выпускных проектах, где студенты запускали свой стартап. Некоторые студенты добились успеха, сделали продажи и продолжили заниматься своим продуктом",
+    "second": "После продолжил консультировать по продуктовым вопросам владельцев малого бизнеса, в основном из креативной индустрии.",
+    "third": "Если вам необходима консультация по следующим вопросам:",
+    "list": [
+        "Продуктовая стратегия, поиск конкурентных преимуществ, развитие продукта",
+        "Продуктовые исследования, A/B тесты, подготовка качественных ",
+        "Аналитика продуктовых метрик, анализ портфеля",
+        "Маркетинговые консультации, формирование стратегии, УТП, анализ аудитории",
+        "Консультации по поиску продактов или продуктовых маркетологов"
+    ],
+    "btnText": "Связаться со мной",
+    "btnLink": "https://t.me/mnikolashin/"
+  },
+  "aboutpara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  "resume": {
+    "tagline": "👋  I'm a software engineer, product designer.",
+    "description": "I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.",
+    "experiences": [
+      {
+        "id": "1",
+        "dates": "March 2022 - Present",
+        "type": "Full Time",
+        "position": "Frontend Engineer at X",
+        "bullets": "Bullet One, Bullet Two"
+      },
+      {
+        "id": "d495c23b-4f65-479a-9b8a-cfbc1c089725",
+        "dates": "July 2020 - March 2022",
+        "type": "Full Time",
+        "position": "Frontend Engineer at X",
+        "bullets": "Worked on the frontend of a React application, Worked on the frontend of a React application"
+      }
+    ],
+    "education": {
+      "universityName": "University X",
+      "universityDate": "2016-2020",
+      "universityPara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+    },
+    "languages": ["Javascript", "HTML5", "CSS", "Python", "Go"],
+    "frameworks": ["React", "Typescript", "NodeJs"],
+    "others": ["Figma", "AdobeXD", "AWS"]
+  }
+}
