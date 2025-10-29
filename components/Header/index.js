@@ -3,6 +3,7 @@ import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import Button from "../Button";
+import Image from "next/image";
 // Local Data
 import data from "../../data/portfolio.json";
 
@@ -37,18 +38,21 @@ const Header = ({ handleWorkScroll, handleCreativeScroll, handleBadmintintonScro
                       setTheme(theme === "dark" ? "light" : "dark")
                     }
                   >
-                    <img
-                      className="h-6"
+                    <Image
+                      width={20} height={20}
+                      className="h-6 w-6"
                       src={`/images/${
                         theme === "dark" ? "moon.svg" : "sun.svg"
                       }`}
-                    ></img>
+                    />
                   </Button>
                 )}
 
                 <Popover.Button>
-                  <img
-                    className="h-5"
+                  <Image
+                    className="h-6 w-6"
+                    width={20}
+                    height={20}
                     src={`/images/${
                       !open
                         ? theme === "dark"
@@ -58,7 +62,7 @@ const Header = ({ handleWorkScroll, handleCreativeScroll, handleBadmintintonScro
                         ? "cancel.svg"
                         : "cancel-white.svg"
                     }`}
-                  ></img>
+                  />
                 </Popover.Button>
               </div>
             </div>
@@ -156,10 +160,11 @@ const Header = ({ handleWorkScroll, handleCreativeScroll, handleBadmintintonScro
               <Button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
-                <img
-                  className="h-6"
+                <Image
+                  width={20} height={20}
+                  className="h-6 w-6"
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
-                ></img>
+                ></Image>
               </Button>
             )}
           </div>
@@ -184,12 +189,15 @@ const Header = ({ handleWorkScroll, handleCreativeScroll, handleBadmintintonScro
 
             {mounted && theme && data.darkMode && (
               <Button
+                className="block w-16"
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
-                <img
-                  className="h-6"
+                <Image
+                  width={16} 
+                  height={16}
+                  className="w-4 h-4"
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
-                ></img>
+                />
               </Button>
             )}
           </div>

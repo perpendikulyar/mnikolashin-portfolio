@@ -8,8 +8,6 @@ import { stagger } from "../animations";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Button from "../components/Button";
-import Link from "next/link";
-import Cursor from "../components/Cursor";
 
 // Local Data
 import data from "../data/portfolio.json";
@@ -90,8 +88,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={`relative ${data.showCursor && "cursor-none"}`}>
-      {data.showCursor && <Cursor />}
+    <div className="relative">
       <Head>
         <title>{data.name}</title>
       </Head>
@@ -157,8 +154,8 @@ export default function Home() {
             Компетенции
           </h3>
           <ul className="mt-2 text-base laptopl:text-lg list-inside list-disc laptop:list-outside laptop:w-4/5">
-            {data.powers.map((e) => (
-              <li className="p-1">{e}</li>
+            {data.powers.map((e, key) => (
+              <li key={key} className="p-1">{e}</li>
             ))}
           </ul>
 
@@ -196,8 +193,8 @@ export default function Home() {
             {data.edu.third}
           </p>
           <ul className="mt-4 text-base laptopl:text-lg list-inside list-disc laptop:list-outside laptop:w-4/5">
-            {data.edu.list.map((e) => (
-              <li className="p-1">{e}</li>
+            {data.edu.list.map((e, key) => (
+              <li key={key} className="p-1">{e}</li>
             ))}
           </ul>
           <div>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
+import Image from 'next/image';
 
 const ServiceCard = ({ name, image, description, onClick }) => {
   const { theme } = useTheme();
@@ -16,7 +17,7 @@ const ServiceCard = ({ name, image, description, onClick }) => {
         onClick={onClick}
     > 
       <div className="w-1/2 tablet:w-1/4 max-h-min rounded-md overflow-hidden flex-none tablet:mr-4 mx-auto">
-        <img src={image} className="w-full" alt={name} />
+        <Image src={image} className="w-full" preload={true}  width={800} height={800} alt={name}></Image>
       </div>
       <div className="flex-auto relative mt-4 tablet:mt-0 text-center tablet:text-left" >
         <h3 className="text-xl tablet:text-xl">{name ? name : "Heading"}</h3>
