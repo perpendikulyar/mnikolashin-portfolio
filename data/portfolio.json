@@ -1,5 +1,6 @@
 {
   "name": "Михаил Николашин",
+  "title": "Михаил Николашин — Продакт, подкастер, мертор, сауд-дизайнер",
   "headerTaglineOne": "Привет 👋",
   "headerTaglineTwo": "Я — Михаил Николашин",
   "headerTaglineZero": "Alexander Grom, Senior Product Manager, Подкастер, Ментор, Саунд-дизайнер, Бадминтонист",
@@ -29,21 +30,35 @@
   "projects": [
     {
         "id": "1",
-        "imageSrc": "/images/rcs.png",
-        "title": "LiveJournal: Рекомендательные сервисы",
-        "description": "hello"
+        "imageSrc": "/images/lj.png",
+        "title": "LiveJournal",
+        "description": [
+          "LJ Photo",
+          "Рекомендательные сервисы",
+          "Платные инструменты",
+          "Сервисы для авторов",
+          "Сервисы внутренней аналитики",
+          "Инструменты для медиа в ЖЖ",
+          "Медийные спецпрокты"
+        ]
     },
     {
         "id": "2",
-        "imageSrc": "/images/paid.png",
-        "title": "LiveJournal: Платные инструменты",
-        "description": "hello"
+        "imageSrc": "/images/pc.png",
+        "title": "ProductCamp",
+        "description": ["Запуск реферальной программы", "Более 20% регистраций", "Геймификация", "Подкаст ProductCamp"]
     },
     {
         "id": "3",
-        "imageSrc": "/images/author.png",
-        "title": "LiveJournal: Сервисы для авторов",
-        "description": "hello"
+        "imageSrc": "/images/wmn.png",
+        "title": "Woman.ru",
+        "description": ["Перезапуск Форума Woman.ru", "Личный кабинет, Анонимный ЛК", "Рекламные технологии", "Редакторские инструменты", "Интерфейсы для модерации", "Коммерческие спецпроекты"]
+    },
+    {
+        "id": "4",
+        "imageSrc": "/images/to.png",
+        "title": "Журнал TimeOut / Журнал Собака.ru",
+        "description": ["Коммерческие спецпроекты", "Редакционные спецпроекты"]
     }
   ],
   "creative": [

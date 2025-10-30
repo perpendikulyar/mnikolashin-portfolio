@@ -6,29 +6,26 @@ import Button from "../Button";
 const Footer = ({}) => {
   return (
     <>
-      <div className="mt-5 laptop:mt-40 p-2 laptop:p-0">
+      <div className="mt-5 laptop:mt-40 laptop:mx-20 p-2 laptop:p-0">
         <div>
-          <h1 className="text-2xl text-bold">Contact.</h1>
+          <div className="text-2xl text-bold">Пока все.</div>
           <div className="mt-10">
             <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">
-              LET&apos;S WORK
+              ДАВАЙТЕ ДЕЛАТЬ
             </h1>
             <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">
-              TOGETHER
+              КРУТЫЕ ВЕЩИ
             </h1>
-            <Button type="primary">Schedule a call</Button>
+            <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">
+              ВМЕСТЕ!
+            </h1>
+            <Button type="primary" onClick={() => window.open("https://t.me/mnikolashiin/")}>Написать мне</Button>
             <div className="mt-10">
               <Socials />
             </div>
           </div>
         </div>
       </div>
-      <h1 className="text-sm text-bold mt-2 laptop:mt-10 p-2 laptop:p-0">
-        Made With ❤ by{" "}
-        <Link href="http://www.chetanverma.com">
-          <a className="underline underline-offset-1">Chetan Verma</a>
-        </Link>
-      </h1>
     </>
   );
 };
