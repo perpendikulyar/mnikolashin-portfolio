@@ -18,6 +18,8 @@ const Header = ({ handleWorkScroll, handleCreativeScroll, handleBadmintintonScro
     setMounted(true);
   }, []);
 
+  const bgColor = theme === "light" ? "bg-white" : "bg-dark";
+
   return (
     <>
       <Popover className="block tablet:hidden mt-5">
@@ -125,9 +127,7 @@ const Header = ({ handleWorkScroll, handleCreativeScroll, handleBadmintintonScro
         )}
       </Popover>
       <div
-        className={`mt-10 laptop:mx-4 hidden flex-row items-center justify-between ${
-          theme === "light" && "bg-white"
-        } dark:text-white top-0 z-10 tablet:flex`}
+        className={`mt-10 laptop:mx-4 hidden flex-row items-center justify-between ${bgColor} dark:text-white top-0 z-10 tablet:flex`}
       >
         <h1
           onClick={() => router.push("/")}

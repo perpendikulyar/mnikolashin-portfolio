@@ -1,4 +1,5 @@
 import { useRef } from "react";
+
 import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
@@ -6,7 +7,6 @@ import WorkCard from "../components/WorkCard";
 import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
 import Footer from "../components/Footer";
-import Head from "next/head";
 import Button from "../components/Button";
 
 // Local Data
@@ -89,9 +89,6 @@ export default function Home() {
 
   return (
     <div className="relative">
-      <Head>
-        <title>{data.name}</title>
-      </Head>
 
       <div className="gradient-circle"></div>
       <div className="gradient-circle-bottom"></div>

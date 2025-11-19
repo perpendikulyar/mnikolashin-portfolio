@@ -11,7 +11,7 @@ const WorkCard = ({ img, name, description, onClick }) => {
       >
         <Image
           alt={name}
-          preload={true}
+          preload={"true"}
           width={600} 
           height={240}
           className="h-full w-full object-cover hover:scale-110 transition-all ease-in-out duration-300 rounded-lg"
