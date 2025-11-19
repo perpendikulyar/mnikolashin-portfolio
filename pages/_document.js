@@ -5,8 +5,7 @@ import data from "../data/portfolio.json";
 export default function Document() {
     return (
         <Html lang="ru">
-        <Head title={data.title} >
-        </Head>
+        <Head />
         <body>
             <Main />
             <NextScript />
