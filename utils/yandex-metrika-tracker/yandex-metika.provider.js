@@ -1,12 +1,12 @@
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
-import { useYandexMetrika } from './yandex-metrika.hooks';
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+import { useYandexMetrika } from "./yandex-metrika.hooks";
 
-const YandexMetrikaProvider = ({ 
-  counterId, 
-  children, 
+const YandexMetrikaProvider = ({
+  counterId,
+  children,
   options = {},
-  trackPages = true 
+  trackPages = true,
 }) => {
   const router = useRouter();
   const { trackPageView } = useYandexMetrika(counterId, options);
@@ -19,9 +19,9 @@ const YandexMetrikaProvider = ({
       trackPageView(url);
     };
 
-    router.events.on('routeChangeComplete', handleRouteChange);
+    router.events.on("routeChangeComplete", handleRouteChange);
     return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
+      router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router, trackPageView, trackPages, counterId]);
 

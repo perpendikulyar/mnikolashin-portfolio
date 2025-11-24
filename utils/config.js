@@ -1,3 +1,3 @@
 export const config = {
-    yandexMetrikaCounterId: 105202974
-}
+  yandexMetrikaCounterId: 105202974,
+};

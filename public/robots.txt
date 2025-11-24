@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /api
+
+User-agent: Yandex
+Allow: /
+Allow: /yandex_7a23f6e7.html
+Disallow: /api
+Crawl-delay: 1
+
+Sitemap: https://michael-nikolashin.xml

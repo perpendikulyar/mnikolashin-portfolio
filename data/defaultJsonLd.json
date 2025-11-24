@@ -1,0 +1,32 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Михаил Николашин",
+  "description": "Продакт-менеджер, ментор, подкастер, саунд-дизайнер",
+  "url": "https://michael-nikolashin.ru",
+  "email": "perpendikulyar@gmail.com",
+  "jobTitle": "Продакт-менеджер",
+  "image": "",
+
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Москва",
+    "addressCountry": "Россия"
+  },
+
+  "sameAs": [
+    "https://linkedin.com/in/yourprofile",
+    "https://github.com/yourusername",
+    "https://behance.net/yourprofile"
+  ],
+
+  "knowsAbout": [
+    "Продакт-менеджер",
+    "UI/UX дизайнер",
+    "Ментор, наставник",
+    "Саунд-дизайнер",
+    "Саунд-инжинер",
+    "Подкастер",
+    "Креативный продюссер"
+  ]
+}

@@ -7,7 +7,13 @@ import Image from "next/image";
 // Local Data
 import data from "../../data/portfolio.json";
 
-const Header = ({ handleWorkScroll, handleCreativeScroll, handleBadmintintonScroll, handleEduScroll, isBlog }) => {
+const Header = ({
+  handleWorkScroll,
+  handleCreativeScroll,
+  handleBadmintintonScroll,
+  handleEduScroll,
+  isBlog,
+}) => {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -41,8 +47,10 @@ const Header = ({ handleWorkScroll, handleCreativeScroll, handleBadmintintonScro
                     }
                   >
                     <Image
-                      width={20} height={20}
+                      width={20}
+                      height={20}
                       className="h-6 w-6"
+                      alt="icon"
                       src={`/images/${
                         theme === "dark" ? "moon.svg" : "sun.svg"
                       }`}
@@ -55,6 +63,7 @@ const Header = ({ handleWorkScroll, handleCreativeScroll, handleBadmintintonScro
                     className="h-6 w-6"
                     width={20}
                     height={20}
+                    alt="icon"
                     src={`/images/${
                       !open
                         ? theme === "dark"
@@ -77,7 +86,9 @@ const Header = ({ handleWorkScroll, handleCreativeScroll, handleBadmintintonScro
                 <div className="grid grid-cols-1">
                   <Button onClick={handleWorkScroll}>Работы</Button>
                   <Button onClick={handleEduScroll}>Консалтинг</Button>
-                  <Button onClick={handleCreativeScroll}>Покасты и музыка</Button>
+                  <Button onClick={handleCreativeScroll}>
+                    Покасты и музыка
+                  </Button>
                   <Button onClick={handleBadmintintonScroll}>Бадминтон</Button>
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
@@ -93,7 +104,9 @@ const Header = ({ handleWorkScroll, handleCreativeScroll, handleBadmintintonScro
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:perpendikulyar@gmail.com")}
+                    onClick={() =>
+                      window.open("mailto:perpendikulyar@gmail.com")
+                    }
                   >
                     Написать
                   </Button>
@@ -116,7 +129,9 @@ const Header = ({ handleWorkScroll, handleCreativeScroll, handleBadmintintonScro
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:perpendikulyar@gmail.com")}
+                    onClick={() =>
+                      window.open("mailto:perpendikulyar@gmail.com")
+                    }
                   >
                     Contact
                   </Button>
@@ -153,7 +168,9 @@ const Header = ({ handleWorkScroll, handleCreativeScroll, handleBadmintintonScro
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:perpendikulyar@gmail.com")}>
+            <Button
+              onClick={() => window.open("mailto:perpendikulyar@gmail.com")}
+            >
               Написать
             </Button>
             {mounted && theme && data.darkMode && (
@@ -161,8 +178,10 @@ const Header = ({ handleWorkScroll, handleCreativeScroll, handleBadmintintonScro
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
                 <Image
-                  width={20} height={20}
+                  width={20}
+                  height={20}
                   className="h-6 w-6"
+                  alt="icon"
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
                 ></Image>
               </Button>
@@ -183,7 +202,9 @@ const Header = ({ handleWorkScroll, handleCreativeScroll, handleBadmintintonScro
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:perpendikulyar@gmail.com")}>
+            <Button
+              onClick={() => window.open("mailto:perpendikulyar@gmail.com")}
+            >
               Contact
             </Button>
 
@@ -193,9 +214,10 @@ const Header = ({ handleWorkScroll, handleCreativeScroll, handleBadmintintonScro
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
                 <Image
-                  width={16} 
+                  width={16}
                   height={16}
                   className="w-4 h-4"
+                  alt="icon"
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
                 />
               </Button>

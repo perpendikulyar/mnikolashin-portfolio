@@ -8,10 +8,11 @@ import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
 import Footer from "../components/Footer";
 import Button from "../components/Button";
+import AppHead from "../components/AppHead";
 
 // Local Data
 import data from "../data/portfolio.json";
-import Head from "next/head";
+import { generateMetadata } from "../utils/yandex-metrika-tracker/generateMetadata";
 
 export default function Home() {
   // Ref
@@ -90,9 +91,7 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>{data.title}</title>
-      </Head>
+      <AppHead />
       <div className="relative">
         <div className="gradient-circle"></div>
         <div className="gradient-circle-bottom"></div>
@@ -226,6 +225,7 @@ export default function Home() {
                   name={service.title}
                   image={service.img}
                   description={service.description}
+                  work={service.work}
                   onClick={() => window.open(service.url)}
                 />
               ))}

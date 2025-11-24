@@ -69,13 +69,13 @@ class YandexMetrika {
     }
   }
 
-   setUserInfo(userId, userParams = {}) {
+  setUserInfo(userId, userParams = {}) {
     if (!this.initialized) return;
-    
-    window.ym?.(this.counterId, 'setUserID', userId);
-    
+
+    window.ym?.(this.counterId, "setUserID", userId);
+
     if (Object.keys(userParams).length > 0) {
-      window.ym?.(this.counterId, 'userParams', userParams);
+      window.ym?.(this.counterId, "userParams", userParams);
     }
   }
 }

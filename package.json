@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "format:js": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
+    "format:json": "prettier --write \"**/*.json\"",
+    "format:css": "prettier --write \"**/*.{css,scss}\"",
+    "format:md": "prettier --write \"**/*.md\""
   },
   "dependencies": {
     "@headlessui/react": "^1.6.6",
@@ -33,6 +39,7 @@
   "devDependencies": {
     "caniuse-lite": "^1.0.30001751",
     "eslint": "8.15.0",
-    "eslint-config-next": "12.1.6"
+    "eslint-config-next": "12.1.6",
+    "prettier": "^2.8.8"
   }
 }

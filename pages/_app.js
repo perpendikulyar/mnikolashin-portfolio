@@ -8,14 +8,14 @@ const App = ({ Component, pageProps }) => {
   return (
     <>
       <YandexMetrikaProvider
-      counterId={config.yandexMetrikaCounterId}
-      options={{
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: false
-      }}
-      trackPages={true}
+        counterId={config.yandexMetrikaCounterId}
+        options={{
+          clickmap: true,
+          trackLinks: true,
+          accurateTrackBounce: true,
+          webvisor: false,
+        }}
+        trackPages={true}
       />
       <ThemeProvider>
         <Component {...pageProps} />

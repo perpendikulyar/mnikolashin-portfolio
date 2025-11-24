@@ -1,5 +1,5 @@
-import { useEffect, useCallback } from 'react';
-import yandexMetrika from './yandex-metrika'
+import { useEffect, useCallback } from "react";
+import yandexMetrika from "./yandex-metrika";
 
 export const useYandexMetrika = (counterId, options = {}) => {
   useEffect(() => {
@@ -12,9 +12,12 @@ export const useYandexMetrika = (counterId, options = {}) => {
     yandexMetrika.pageView(url);
   }, []);
 
-  const trackEvent = useCallback((category, action, label = null, value = null) => {
-    yandexMetrika.event(category, action, label, value);
-  }, []);
+  const trackEvent = useCallback(
+    (category, action, label = null, value = null) => {
+      yandexMetrika.event(category, action, label, value);
+    },
+    []
+  );
 
   const trackGoal = useCallback((target, params = null) => {
     yandexMetrika.reachGoal(target, params);
@@ -28,6 +31,6 @@ export const useYandexMetrika = (counterId, options = {}) => {
     trackPageView,
     trackEvent,
     trackGoal,
-    setUser
+    setUser,
   };
 };
