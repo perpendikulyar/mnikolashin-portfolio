@@ -38,7 +38,7 @@
   "projects": [
     {
       "id": "1",
-      "imageSrc": "/images/lj.png",
+      "imageSrc": "/images/lj1.png",
       "title": "LiveJournal",
       "description": [
         "Система метрик",
@@ -54,7 +54,7 @@
     },
     {
       "id": "2",
-      "imageSrc": "/images/pc.png",
+      "imageSrc": "/images/pc1.png",
       "title": "ProductCamp",
       "description": [
         "Реферальная программа",
@@ -64,7 +64,7 @@
     },
     {
       "id": "3",
-      "imageSrc": "/images/wmn.png",
+      "imageSrc": "/images/wmn1.png",
       "title": "Woman.ru",
       "description": [
         "Перезапуск Форума Woman.ru",
@@ -78,7 +78,7 @@
     },
     {
       "id": "4",
-      "imageSrc": "/images/to.png",
+      "imageSrc": "/images/to1.png",
       "title": "Журнал TimeOut / Журнал Собака.ru",
       "description": ["Коммерческие спецпроекты", "Редакционные спецпроекты"]
     }
