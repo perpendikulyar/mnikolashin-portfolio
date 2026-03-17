@@ -4,6 +4,9 @@ import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
 import WorkCard from "../components/WorkCard";
+import CaseCard from "../components/CaseCard/CaseCard";
+import SkillsSection from "../components/SkillsSection/SkillsSection";
+import ResumeDownload from "../components/ResumeDownload/ResumeDownload";
 import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
 import Footer from "../components/Footer";
@@ -16,6 +19,9 @@ import { generateMetadata } from "../utils/yandex-metrika-tracker/generateMetada
 
 export default function Home() {
   // Ref
+  const casesRef = useRef();
+  const skillsRef = useRef();
+  const aboutRef = useRef();
   const workRef = useRef();
   const crativeRef = useRef();
   const textZero = useRef();
@@ -31,6 +37,30 @@ export default function Home() {
   const edu = useRef();
 
   // Handling Scroll
+  const handleCasesScroll = () => {
+    window.scrollTo({
+      top: casesRef.current.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const handleSkillsScroll = () => {
+    window.scrollTo({
+      top: skillsRef.current.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const handleAboutScroll = () => {
+    window.scrollTo({
+      top: aboutRef.current.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   const handleWorkScroll = () => {
     window.scrollTo({
       top: workRef.current.offsetTop,
@@ -40,14 +70,6 @@ export default function Home() {
   };
 
   const handleCreativeScroll = () => {
-    window.scrollTo({
-      top: crativeRef.current.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
-
-  const handleAboutScroll = () => {
     window.scrollTo({
       top: crativeRef.current.offsetTop,
       left: 0,
@@ -98,6 +120,8 @@ export default function Home() {
 
         <div className="container mx-auto mb-10">
           <Header
+            handleCasesScroll={handleCasesScroll}
+            handleSkillsScroll={handleSkillsScroll}
             handleWorkScroll={handleWorkScroll}
             handleAboutScroll={handleAboutScroll}
             handleCreativeScroll={handleCreativeScroll}
@@ -142,6 +166,89 @@ export default function Home() {
 
             <Socials className="mt-4 laptop:mt-6" />
           </div>
+
+          {/* Cases Section */}
+          <div
+            className="mt-10 laptop:mt-20 p-2 laptop:p-0 laptop:mx-20"
+            ref={casesRef}
+          >
+            <h2 className="text-3xl laptop:text-5xl text-bold mb-2">Кейсы</h2>
+            <p className="text-base laptop:text-lg text-gray-600 dark:text-gray-400 mb-8 laptop:w-3/5">
+              3 ключевых проекта с измеримыми результатами
+            </p>
+
+            <div className="grid grid-cols-1 laptop:grid-cols-2 gap-6">
+              {data.cases.map((caseItem) => (
+                <CaseCard key={caseItem.id} caseData={caseItem} />
+              ))}
+            </div>
+          </div>
+
+          {/* Skills Section */}
+          <div
+            className="mt-10 laptop:mt-20 p-2 laptop:p-0 laptop:mx-20"
+            ref={skillsRef}
+          >
+            <h2 className="text-3xl laptop:text-5xl text-bold mb-2">Навыки</h2>
+            <p className="text-base laptop:text-lg text-gray-600 dark:text-gray-400 mb-8 laptop:w-3/5">
+              Ключевые компетенции для создания продуктов мирового уровня
+            </p>
+
+            {data.skills && <SkillsSection skills={data.skills} />}
+          </div>
+
+          {/* About Section */}
+          <div
+            className="mt-10 laptop:mt-20 p-2 laptop:p-0 laptop:mx-20"
+            ref={aboutRef}
+          >
+            <h2 className="text-3xl laptop:text-5xl text-bold mb-6">Обо мне</h2>
+            <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-800">
+              <p className="text-lg laptop:text-xl text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                {data.elevatorPitch}
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div>
+                  <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">
+                    Целевые роли
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {data.targetRoles.map((role, idx) => (
+                      <span
+                        key={idx}
+                        className="px-3 py-1 text-sm rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300"
+                      >
+                        {role}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">
+                    Индустрии
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {data.targetIndustries.map((industry, idx) => (
+                      <span
+                        key={idx}
+                        className="px-3 py-1 text-sm rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300"
+                      >
+                        {industry}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {data.resumePdfUrl && (
+                <div className="pt-6 border-t border-gray-100 dark:border-gray-800">
+                  <ResumeDownload pdfUrl={data.resumePdfUrl} />
+                </div>
+              )}
+            </div>
+          </div>
+
           <div
             className="mt-10 laptop:mt-30 p-2 laptop:p-0 laptop:mx-20"
             ref={workRef}

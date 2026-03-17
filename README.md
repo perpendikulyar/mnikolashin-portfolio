@@ -1,72 +1,146 @@
-![thumbnail](https://user-images.githubusercontent.com/16558205/180779213-ea740975-3df1-460a-a964-0a623ee25872.png)
+# 👋 Михаил Николашин — Senior Product Manager Portfolio
 
-### Live - https://react-portfolio-template.netlify.app
+**Live:** [michael-nikolashin.ru](https://michael-nikolashin.ru)  
+**Статус:** 🔄 В разработке (обновление Q1 2026)
 
-### Demo Video - https://www.youtube.com/watch?v=62_HLbx2zLQ&t=9s
+---
 
-### Open Source UI Components - https://ui.chetanverma.com/
+## 🎯 О проекте
 
-### Tutorials
+Портфолио для позиции **Senior Product Manager** в медиа/развлечениях/B2C с фокусом на 3 ключевых кейса:
 
-Youtube - https://www.youtube.com/watch?v=8cmJ2kR4SpM
+| Кейс                     | Компания    | Результат                                |
+| ------------------------ | ----------- | ---------------------------------------- |
+| 🤖 ML-рекомендации       | LiveJournal | CTR +5%, Session Depth +3%               |
+| 🎨 Редизайн форума       | Woman.ru    | Возврат аудитории, рост новой демографии |
+| 📈 Реферальная программа | ProductCamp | 20% регистраций через рефералки          |
 
-Blog - https://www.chetanverma.com/blog/how-to-build-a-portfolio-website-using-nextjs-and-tailwindcss
+---
 
-### Features -
+## 📦 Tech Stack
 
-- Modern Stack (Next.js + TailwindCSS)
-- Minimal Design
-- Easy To Browse
-- Easy To Customize your details With GUI
-- Blog Crud (Create, Read, Update, Delete blog with easy to use UI).
-- Dark Mode
+- **Framework:** Next.js 12
+- **Styling:** TailwindCSS 3
+- **Animations:** GSAP 3
+- **Theme:** next-themes (Dark/Light)
+- **Deployment:** Netlify
 
-### Sections
+---
 
-- Header
-- Work
-- Services
-- About
-- Contact
-- Markdown Blog
+## 🚀 Быстрый старт
 
-### How To Use
+```bash
+# Установка зависимостей
+npm install  # или yarn
 
-- Clone this repo
-- run `yarn`
-- `yarn dev`
+# Запуск dev-сервера
+npm run dev  # или yarn dev
 
-### How To Deploy -
+# Сборка для продакшена
+npm run build
+npm start
+```
 
-- There are many ways to Deploy this repo.
-- here we are gonna use netlify
-- Login into netlify with github
-- after login select the forked repo or the repo you want to deploy
-- after selecting netlify will automatially deploy your website.
+---
 
-Quickes way to deploy this repo -
+## 📋 Структура проекта
 
-[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/chetanverma16/react-portfolio-template)
+```
+mnikolashin-portfolio/
+├── components/          # React компоненты
+│   ├── CaseCard/       # Карточка кейса (новый)
+│   ├── MetricsVisualization/  # Графики метрик (новый)
+│   ├── SkillsSection/  # Навыки (новый)
+│   ├── Header/         # Шапка
+│   ├── Footer/         # Подвал
+│   └── ...
+├── pages/              # Страницы Next.js
+│   ├── index.js        # Главная
+│   └── blog/           # Блог (опционально)
+├── data/               # Данные
+│   └── portfolio.json  # Основной контент
+├── public/             # Статика
+│   ├── images/         # Изображения
+│   └── resume.pdf      # Резюме для скачивания
+├── styles/             # Глобальные стили
+│   └── globals.css
+└── animations/         # GSAP анимации
+```
 
-### How To Contribute -
+---
 
-I would be very happy to review your PRs and all the awesome things that you can improve on this portfolio.
+## 📊 Roadmap обновления
 
-### Tech Stack Used -
+| Этап            | Задачи                               | Статус     |
+| --------------- | ------------------------------------ | ---------- |
+| **Контент**     | 3 кейса с метриками, elevator pitch  | ⏳ В плане |
+| **UI/UX**       | Карточки кейсов, визуализация метрик | ⏳ В плане |
+| **Навыки**      | Секция с категориями и уровнями      | ⏳ В плане |
+| **SEO**         | Мета-теги, Open Graph, keywords      | ⏳ В плане |
+| **Performance** | Lighthouse >90, оптимизация          | ⏳ В плане |
 
-- Next.js
-- TailwindCSS
+Подробный план в файле [`BACKLOG.md`](./BACKLOG.md)
 
-### Thanks
+---
 
-If you liked this portfolio template, don't forget to give it a ⭐.
+## 🎨 Секции сайта
 
-## Awesome Contributors
+| Секция         | Описание                                      |
+| -------------- | --------------------------------------------- |
+| **Header**     | Навигация, переключатель темы                 |
+| **Обо мне**    | Elevator pitch, целевые роли                  |
+| **Кейсы**      | 3 ключевых проекта с метриками                |
+| **Навыки**     | Product, Technical, Design, Growth            |
+| **Проекты**    | Портфолио работ (LiveJournal, Woman.ru, etc.) |
+| **Консалтинг** | Услуги менторства и консультаций              |
+| **Креатив**    | Подкасты, музыка, саунд-дизайн                |
+| **Бадминтон**  | Хобби и спортивные достижения                 |
+| **Footer**     | Контакты, соцсети                             |
 
-[@Aryan3212](https://github.com/Aryan3212) [@achu-krishna](https://github.com/achu-krishna)
+---
 
-## Supporting
+## 📱 Требования
 
-Many hours of hard work have gone into this project. Your support will be very appreciated!
+- **Mobile-first:** Адаптивность 320px — 1920px
+- **Темы:** Тёмная / Светлая (переключатель)
+- **Производительность:** Lighthouse Performance >90
+- **SEO:** Title, Description, Open Graph, Keywords
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/chetanverma)
+---
+
+## 🔧 Скрипты
+
+```bash
+npm run dev          # Запуск dev-сервера
+npm run build        # Сборка продакшена
+npm start            # Запуск продакшена
+npm run lint         # ESLint проверка
+npm run format       # Prettier форматирование
+npm run format:check # Проверка формата
+```
+
+---
+
+## 📞 Контакты
+
+- **Email:** perpendikulyar@gmail.com
+- **Telegram:** [@mnikolashin](https://t.me/mnikolashin)
+- **Подкаст:** [Кита и Грома](https://st.zvuk.com/podkast-kita-i-groma)
+
+---
+
+## 🤝 Вклад
+
+Этот проект основан на [react-portfolio-template](https://github.com/chetanverma16/react-portfolio-template) от [@chetanverma16](https://github.com/chetanverma16).
+
+Оригинальные контрибьюторы: [@Aryan3212](https://github.com/Aryan3212), [@achu-krishna](https://github.com/achu-krishna)
+
+---
+
+## 📄 License
+
+MIT License — см. файл LICENSE если существует.
+
+---
+
+**Если нравится этот шаблон — поставьте ⭐ оригинальному репозиторию!**

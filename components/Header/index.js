@@ -8,6 +8,8 @@ import Image from "next/image";
 import data from "../../data/portfolio.json";
 
 const Header = ({
+  handleCasesScroll,
+  handleSkillsScroll,
   handleWorkScroll,
   handleCreativeScroll,
   handleBadmintintonScroll,
@@ -84,10 +86,12 @@ const Header = ({
             >
               {!isBlog ? (
                 <div className="grid grid-cols-1">
-                  <Button onClick={handleWorkScroll}>Работы</Button>
+                  <Button onClick={handleCasesScroll}>Кейсы</Button>
+                  <Button onClick={handleSkillsScroll}>Навыки</Button>
+                  <Button onClick={handleWorkScroll}>Проекты</Button>
                   <Button onClick={handleEduScroll}>Консалтинг</Button>
                   <Button onClick={handleCreativeScroll}>
-                    Покасты и музыка
+                    Подкасты и музыка
                   </Button>
                   <Button onClick={handleBadmintintonScroll}>Бадминтон</Button>
                   {showBlog && (
@@ -152,7 +156,9 @@ const Header = ({
         </h1>
         {!isBlog ? (
           <div className="flex">
-            <Button onClick={handleWorkScroll}>Работы</Button>
+            <Button onClick={handleCasesScroll}>Кейсы</Button>
+            <Button onClick={handleSkillsScroll}>Навыки</Button>
+            <Button onClick={handleWorkScroll}>Проекты</Button>
             <Button onClick={handleEduScroll}>Консалтинг</Button>
             <Button onClick={handleCreativeScroll}>Подкасты и музыка</Button>
             <Button onClick={handleBadmintintonScroll}>Бадминтон</Button>
