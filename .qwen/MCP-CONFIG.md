@@ -1,26 +1,41 @@
 # MCP Servers Configuration
 
-## Figma MCP Setup
+## 🔐 Security: Figma API Token
 
-### 1. Получить Figma API Token
+**⚠️ ВАЖНО: Никогда не коммить токен в репо!**
+
+Токен хранится **локально** на каждом устройстве:
+- **macOS/Linux:** `~/.config/mcp/servers.json`
+- **Windows:** `%APPDATA%\mcp\servers.json`
+
+Этот файл **не должен** быть в проекте и **не должен** коммититься в git.
+
+---
+
+## 1. Получить Figma API Token
 
 1. Зайти в [Figma Settings → Access tokens](https://www.figma.com/settings)
 2. Нажать "Create new token"
 3. Дать название (например: "Portfolio MCP")
 4. **Скопировать токен** (показывается один раз!)
+5. **Сохранить в менеджере паролей** (1Password, Bitwarden)
 
-### 2. Добавить токен в MCP конфиг
+---
 
-Создать/обновить файл конфига MCP:
+## 2. Добавить токен в MCP конфиг
+
+Создать файл локально (не в проекте!):
 
 **macOS/Linux:**
 ```bash
-~/.config/mcp/servers.json
+mkdir -p ~/.config/mcp
+nano ~/.config/mcp/servers.json
 ```
 
 **Windows:**
-```bash
-%APPDATA%\mcp\servers.json
+```powershell
+mkdir $env:APPDATA\mcp
+notepad $env:APPDATA\mcp\servers.json
 ```
 
 **Содержимое:**
@@ -38,7 +53,14 @@
 }
 ```
 
-### 3. Проверить подключение
+**Проверить:**
+```bash
+cat ~/.config/mcp/servers.json
+```
+
+---
+
+## 3. Проверить подключение
 
 Запустить команду в Qwen Code:
 ```
