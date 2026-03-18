@@ -7,6 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "format:js": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
@@ -37,9 +40,15 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
     "caniuse-lite": "^1.0.30001751",
     "eslint": "8.57.0",
     "eslint-config-next": "14.2.3",
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0",
+    "jest-junit": "^16.0.0",
     "prettier": "^2.8.8"
   }
 }
