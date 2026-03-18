@@ -6,7 +6,6 @@ import Socials from "../components/Socials";
 import WorkCard from "../components/WorkCard";
 import CaseCard from "../components/CaseCard/CaseCard";
 import SkillsSection from "../components/SkillsSection/SkillsSection";
-import ResumeDownload from "../components/ResumeDownload/ResumeDownload";
 import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
 import Footer from "../components/Footer";
