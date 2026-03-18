@@ -4,6 +4,9 @@ import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
 import WorkCard from "../components/WorkCard";
+import CaseCard from "../components/CaseCard/CaseCard";
+import SkillsSection from "../components/SkillsSection/SkillsSection";
+import ResumeDownload from "../components/ResumeDownload/ResumeDownload";
 import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
 import Footer from "../components/Footer";
@@ -16,6 +19,9 @@ import { generateMetadata } from "../utils/yandex-metrika-tracker/generateMetada
 
 export default function Home() {
   // Ref
+  const casesRef = useRef();
+  const skillsRef = useRef();
+  const aboutRef = useRef();
   const workRef = useRef();
   const crativeRef = useRef();
   const textZero = useRef();
@@ -31,6 +37,30 @@ export default function Home() {
   const edu = useRef();
 
   // Handling Scroll
+  const handleCasesScroll = () => {
+    window.scrollTo({
+      top: casesRef.current.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const handleSkillsScroll = () => {
+    window.scrollTo({
+      top: skillsRef.current.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const handleAboutScroll = () => {
+    window.scrollTo({
+      top: aboutRef.current.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   const handleWorkScroll = () => {
     window.scrollTo({
       top: workRef.current.offsetTop,
@@ -40,14 +70,6 @@ export default function Home() {
   };
 
   const handleCreativeScroll = () => {
-    window.scrollTo({
-      top: crativeRef.current.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
-
-  const handleAboutScroll = () => {
     window.scrollTo({
       top: crativeRef.current.offsetTop,
       left: 0,
@@ -85,7 +107,7 @@ export default function Home() {
         textLast.current,
       ],
       { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
-      { y: 0, x: 0, transform: "scale(1)" }
+      { y: 0, x: 0, transform: "scale(1)" },
     );
   }, []);
 
@@ -98,6 +120,8 @@ export default function Home() {
 
         <div className="container mx-auto mb-10">
           <Header
+            handleCasesScroll={handleCasesScroll}
+            handleSkillsScroll={handleSkillsScroll}
             handleWorkScroll={handleWorkScroll}
             handleAboutScroll={handleAboutScroll}
             handleCreativeScroll={handleCreativeScroll}
@@ -124,46 +148,44 @@ export default function Home() {
               >
                 {data.headerTaglineZero}
               </h1>
-              <ul className="mt-4 text-lg laptopl:text-1xl p-1 tablet:p-2 list-inside list-disc laptop:list-outside laptop:w-4/5">
-                <li ref={textThree}>{data.headerTaglineThree}</li>
-                <li ref={textFour}>{data.headerTaglineFour}</li>
-                <li ref={textFive}>{data.headerTaglineFive}</li>
-                <li ref={textSix}>{data.headerTaglineSix}</li>
-                <li ref={textSeven}>{data.headerTaglineSeven}</li>
-              </ul>
-              <h4
-                ref={textLast}
-                className="text-base italic tablet:text-base laptop:text-base laptopl:text-lg p-1 tablet:p-2 w-full laptop:w-4/5
-              "
-              >
-                {data.headerTaglineLast}
-              </h4>
-            </div>
 
-            <Socials className="mt-4 laptop:mt-6" />
+              <div className="mt-2 mb-2">
+                <div className="flex flex-wrap gap-2">
+                  {data.targetIndustries.map((industry, idx) => (
+                    <span
+                      key={idx}
+                      className="px-3 py-1 text-sm rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300"
+                    >
+                      {industry}
+                    </span>
+                  ))}
+                </div>
+
+                <ul className="mt-4 text-lg laptopl:text-1xl p-1 tablet:p-2 list-inside list-disc laptop:list-outside laptop:w-4/5">
+                  <li ref={textThree}>{data.headerTaglineThree}</li>
+                  <li ref={textFour}>{data.headerTaglineFour}</li>
+                  <li ref={textFive}>{data.headerTaglineFive}</li>
+                  <li ref={textSix}>{data.headerTaglineSix}</li>
+                  <li ref={textSeven}>{data.headerTaglineSeven}</li>
+                </ul>
+                <h4
+                  ref={textLast}
+                  className="text-base italic tablet:text-base laptop:text-base laptopl:text-lg p-1 tablet:p-2 w-full laptop:w-4/5
+              "
+                >
+                  {data.headerTaglineLast}
+                </h4>
+              </div>
+
+              <Socials className="mt-4 laptop:mt-6" />
+            </div>
           </div>
+
           <div
             className="mt-10 laptop:mt-30 p-2 laptop:p-0 laptop:mx-20"
             ref={workRef}
           >
-            <h2 className="text-3xl laptop:text-5xl text-bold">
-              Мои проекты и работа
-            </h2>
-
-            <h3 className="text-2xl pt-3 text-bold mt-4 laptop:mt-8">
-              Компетенции
-            </h3>
-            <ul className="mt-2 text-base laptopl:text-lg list-inside list-disc laptop:list-outside laptop:w-4/5">
-              {data.powers.map((e, key) => (
-                <li key={key} className="p-1">
-                  {e}
-                </li>
-              ))}
-            </ul>
-
-            <h3 className="text-2xl pt-3 text-bold mt-4 laptop:mt-8">
-              Проекты
-            </h3>
+            <h2 className="text-3xl laptop:text-5xl text-bold">Мои проекты</h2>
 
             <div className="mt-4 laptop:mt-6 grid grid-cols-1 tablet:grid-cols-2 gap-4">
               {data.projects.map((project) => (
@@ -176,41 +198,20 @@ export default function Home() {
                 />
               ))}
             </div>
-          </div>
 
-          <div
-            className="mt-6 laptop:mt-20 p-2 laptop:p-0 laptop:mx-20"
-            ref={edu}
-          >
-            <h1 className="text-3xl laptop:text-5xl text-bold">
-              Консалтинг, менторство и преподавание
-            </h1>
-            <p className="mt-4 text-base laptop:text-lg w-full laptop:w-3/5">
-              {data.edu.first}
-            </p>
-            <p className="mt-4 text-base laptop:text-lg w-full laptop:w-3/5">
-              {data.edu.second}
-            </p>
-            <p className="mt-8 text-lg laptop:text-2xl w-full laptop:w-3/5">
-              {data.edu.third}
-            </p>
-            <ul className="mt-4 text-base laptopl:text-lg list-inside list-disc laptop:list-outside laptop:w-4/5">
-              {data.edu.list.map((e, key) => (
-                <li key={key} className="p-1">
-                  {e}
-                </li>
-              ))}
-            </ul>
-            <div>
-              <Button
-                className="relative"
-                type="primary"
-                onClick={() => window.open(data.edu.btnLink)}
-              >
-                {data.edu.btnText}
-              </Button>
+            {/* Кейсы */}
+            <div className="mt-10 laptop:mt-16">
+              <h3 className="text-2xl laptop:text-3xl text-bold mb-6">
+                Ключевые кейсы
+              </h3>
+              <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-6">
+                {data.cases.map((caseItem) => (
+                  <CaseCard key={caseItem.id} caseData={caseItem} />
+                ))}
+              </div>
             </div>
           </div>
+
           <div
             className="mt-6 laptop:mt-20 p-2 laptop:p-0 laptop:mx-20"
             ref={crativeRef}
