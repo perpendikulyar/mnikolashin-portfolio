@@ -297,15 +297,27 @@ p {
 }
 
 .btn-primary {
-  @apply bg-primary text-white hover:bg-primary-hover active:scale-98 hover:shadow-lg hover:-translate-y-0.5 focus:ring-primary;
+  @apply bg-primary text-white hover:bg-primary-hover hover:shadow-lg hover:-translate-y-0.5 focus:ring-primary;
+  transform: scale(1);
+}
+.btn-primary:active {
+  transform: scale(0.98);
 }
 
 .btn-secondary {
-  @apply bg-transparent border-2 border-primary text-primary hover:bg-primary/10 active:scale-98 focus:ring-primary;
+  @apply bg-transparent border-2 border-primary text-primary hover:bg-primary/10 focus:ring-primary;
+  transform: scale(1);
+}
+.btn-secondary:active {
+  transform: scale(0.98);
 }
 
 .btn-ghost {
-  @apply bg-transparent text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 active:scale-98 focus:ring-gray-400;
+  @apply bg-transparent text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 focus:ring-gray-400;
+  transform: scale(1);
+}
+.btn-ghost:active {
+  transform: scale(0.98);
 }
 
 /* Skill Tag Styles */
