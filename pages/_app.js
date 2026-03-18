@@ -17,7 +17,12 @@ const App = ({ Component, pageProps }) => {
         }}
         trackPages={true}
       />
-      <ThemeProvider>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="dark"
+        enableSystem={true}
+        disableTransitionOnChange
+      >
         <Component {...pageProps} />
       </ThemeProvider>
     </>

@@ -4,9 +4,9 @@ import data from "../data/portfolio.json";
 
 export default function Document() {
   return (
-    <Html lang="ru">
+    <Html lang="ru" className="dark">
       <Head />
-      <body>
+      <body className="dark:bg-black dark:text-white">
         <Main />
         <NextScript />
       </body>

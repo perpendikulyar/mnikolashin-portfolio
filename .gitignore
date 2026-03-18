@@ -30,3 +30,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# mcp servers config (contains API tokens)
+# MCP конфиг хранится локально: ~/.config/mcp/servers.json
+# Не коммитить в репо!
