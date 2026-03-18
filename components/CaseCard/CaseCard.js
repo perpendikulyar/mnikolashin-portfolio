@@ -23,7 +23,7 @@ const CaseCard = ({ caseData }) => {
   } = caseData;
 
   return (
-    <div className="group relative bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-800">
+    <div className="group relative bg-white dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-md dark:shadow-lg hover:shadow-xl dark:hover:shadow-purple-500/20 hover:-translate-y-1 transition-all duration-300 overflow-hidden border border-gray-200/10 dark:border-gray-700/50">
       {/* Gradient overlay on hover */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
@@ -39,7 +39,7 @@ const CaseCard = ({ caseData }) => {
 
         {/* Category Badge */}
         <div className="absolute top-4 left-4">
-          <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium bg-white/90 dark:bg-gray-900/90 text-gray-800 dark:text-gray-200 backdrop-blur-sm">
+          <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm border border-gray-200/20 dark:border-gray-600/30 text-gray-800 dark:text-gray-100">
             <span>{categoryIcon}</span>
             {category}
           </span>
@@ -129,7 +129,7 @@ const CaseCard = ({ caseData }) => {
             </svg>
             Проблема
           </h4>
-          <p className="text-sm text-gray-600 dark:text-gray-300">{problem}</p>
+          <p className="text-sm text-gray-600 dark:text-gray-200">{problem}</p>
         </div>
 
         {/* Solution */}
@@ -150,12 +150,12 @@ const CaseCard = ({ caseData }) => {
             </svg>
             Решение
           </h4>
-          <p className="text-sm text-gray-600 dark:text-gray-300">{solution}</p>
+          <p className="text-sm text-gray-600 dark:text-gray-200">{solution}</p>
         </div>
 
         {/* Metrics */}
         {metrics && metrics.length > 0 && (
-          <div className="mb-4 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+          <div className="mb-4 p-3 bg-gray-50 dark:bg-gray-800/70 rounded-lg">
             <h4 className="text-sm font-semibold text-green-600 dark:text-green-400 mb-3 flex items-center gap-1">
               <svg
                 className="w-4 h-4"
@@ -197,7 +197,7 @@ const CaseCard = ({ caseData }) => {
               </svg>
               Инсайт
             </h4>
-            <p className="text-sm text-gray-600 dark:text-gray-300 italic">
+            <p className="text-sm text-gray-600 dark:text-gray-200 italic">
               {insights}
             </p>
           </div>
@@ -209,7 +209,7 @@ const CaseCard = ({ caseData }) => {
             {skills.map((skill, idx) => (
               <span
                 key={idx}
-                className="px-2 py-1 text-xs font-medium rounded-md bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300"
+                className="px-2 py-1 text-xs font-medium rounded-md bg-purple-500/10 dark:bg-purple-500/20 border border-purple-200/20 dark:border-purple-500/30 text-purple-700 dark:text-purple-300"
               >
                 {skill}
               </span>

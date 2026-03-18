@@ -3,23 +3,24 @@
   "metadata": {
     "title": "Михаил Николашин — Senior Product Manager | Media, B2C, ML",
     "description": "10+ лет в медиа. ML-рекомендации, Growth, UX/UI. LiveJournal, Woman.ru, ProductCamp. Senior PM / Lead PM в медиа и B2C продуктах",
-    "keywords": "Senior Product Manager, Product Manager, Media, B2C, ML, Recommendations, Growth, UX/UI, LiveJournal, Woman.ru",
+    "keywords": "Senior Product Manager, Менеджер продукта, Media, B2C, ML, Recommendations, Growth, UX/UI, LiveJournal, Woman.ru",
     "openGraph": {
       "title": "Михаил Николашин — Senior Product Manager | Media, B2C, ML",
       "description": "10+ лет в медиа. ML-рекомендации, Growth, UX/UI. LiveJournal, Woman.ru, ProductCamp"
     }
   },
-  "elevatorPitch": "Senior Product Manager с 10+ годами опыта в медиа и B2C-продуктах. Специализируюсь на ML-рекомендациях, growth-маркетинге и монетизации. Ищу роли Senior PM / Lead PM в медиа, развлечениях или B2C-продуктах с командой 5+ человек.",
+  "elevatorPitch": "Прдакт менеджер с опытом в B2C-продуктах более 10 лет. Мой домен — это медиа- и интеретеймент продукты. Специализируюсь на ML-рекомендациях, growth-маркетинге и монетизации.",
   "targetRoles": [
     "Senior Product Manager",
     "Lead Product Manager",
     "Head of Product"
   ],
   "targetIndustries": [
-    "Media",
-    "Entertainment",
-    "B2C Platforms",
-    "Creator Tools"
+    "Медиа",
+    "Интертеймент",
+    "Социальные сети",
+    "Комьюнити",
+    "Креативная экономика"
   ],
   "salaryExpectation": "от 400 000 ₽",
   "headerTaglineOne": "Привет 👋",
@@ -29,7 +30,7 @@
   "headerTaglineFour": "Специализация: ML-рекомендации, монетизация, рекламные технологии, growth, продуктовый дизайн",
   "headerTaglineFive": "Преподаю продакт-менеджмент, менторю продактов креативной индустрии",
   "headerTaglineSix": "Делаю подкасты: креативный продюсер, ведущий, саунд-дизайнер",
-  "headerTaglineSeven": "Играю в бадминтон на соревнованиях",
+  "headerTaglineSeven": "Играю в бадминтон и даю уроки",
   "headerTaglineLast": "Москва, Россия",
   "showCursor": false,
   "showBlog": false,
@@ -49,7 +50,11 @@
       "title": "Подкаст Кита и Грома",
       "link": "https://st.zvuk.com/podkast-kita-i-groma"
     },
-    { "id": "3", "title": "Email", "link": "mailto:perpendikulyar@gmail.com" }
+    {
+      "id": "3",
+      "title": "Email",
+      "link": "mailto:perpendikulyar@gmail.com"
+    }
   ],
   "projects": [
     {
@@ -96,7 +101,10 @@
       "id": "4",
       "imageSrc": "/images/to1.png",
       "title": "Журнал TimeOut / Журнал Собака.ru",
-      "description": ["Коммерческие спецпроекты", "Редакционные спецпроекты"]
+      "description": [
+        "Коммерческие спецпроекты",
+        "Редакционные спецпроекты"
+      ]
     }
   ],
   "creative": [
@@ -154,28 +162,21 @@
       "title": "ML-рекомендации в LiveJournal",
       "category": "ML & AI",
       "categoryIcon": "🤖",
-      "problem": "Низкий CTR контента — пользователи не находили интересные публикации в ленте. Отток времени на поиск релевантного контента.",
-      "solution": "Запуск рекомендательной системы на базе ML. Проведение A/B-тестов размещения рекомендательных блоков. Интеграция event-based аналитики для трекинга взаимодействий.",
+      "problem": "Низкая уровень глубины от публикации к публикации. Сложный процесс дискавери интересного контента",
+      "solution": "Запуск рекомендательной системы на базе ML. Проведение A/B-тестов размещения рекомендательных блоков. Нативные рекламные слоты",
       "metrics": [
         {
           "name": "CTR карточек",
-          "before": "2.1%",
-          "after": "7.1%",
+          "before": "0.7%",
+          "after": "5.8%",
           "change": "+5%",
           "positive": true
         },
         {
           "name": "Session Depth",
           "before": "3.2",
-          "after": "6.2",
-          "change": "+3%",
-          "positive": true
-        },
-        {
-          "name": "Время на сайте",
-          "before": "8 мин",
-          "after": "12 мин",
-          "change": "+50%",
+          "after": "4.1",
+          "change": "+4%",
           "positive": true
         }
       ],
@@ -188,17 +189,17 @@
         "RecSys"
       ],
       "imageUrl": "/images/lj1.png",
-      "period": "2018-2020",
-      "teamSize": "8 человек",
-      "mau": "50M+"
+      "period": "2024-2025",
+      "teamSize": "12 человек",
+      "mau": "70M+"
     },
     {
       "id": "2",
-      "title": "Редизайн форума Woman.ru",
+      "title": "Перезапуск Форума Woman.ru",
       "category": "UX/UI",
       "categoryIcon": "🎨",
-      "problem": "Устаревший дизайн форума, отток молодой аудитории (18-34). Низкая вовлечённость, устаревший UX.",
-      "solution": "Полная переработка UX/UI: навигация, личный кабинет, анонимный режим, модерация. Персонализация ленты. Дизайн-система для консистентности интерфейса.",
+      "problem": "Низкий прирост молодой аудитории (18-34). Непривлекательный для рекламодателей. Устаревшие UX и функциональность",
+      "solution": "Полная переработка UX/UI: навигация, личный кабинет, анонимный режим, модерация. Персонализация ленты и тренды. Дизайн-система для консистентности интерфейса.",
       "metrics": [
         {
           "name": "Новая аудитория 18-34",
@@ -208,21 +209,14 @@
           "positive": true
         },
         {
-          "name": "DAU/MAU Ratio",
-          "before": "18%",
-          "after": "25%",
-          "change": "+7%",
-          "positive": true
-        },
-        {
-          "name": "Возврат пользователей",
+          "name": "Retention",
           "before": "35%",
           "after": "52%",
           "change": "+17%",
           "positive": true
         }
       ],
-      "insights": "Миграция legacy-платформы требует баланса между сохранением лояльной аудитории и привлечением новой. Анонимный режим стал ключевой фичей.",
+      "insights": "Миграция legacy-платформы требует баланса между сохранением лояльной аудитории и привлечением новой. Анонимный личный кабинет стал ключевой фичей. Новый дизайн позвлек привлечь больше рекламодателей",
       "skills": [
         "UX/UI",
         "Community",
@@ -232,29 +226,22 @@
       ],
       "imageUrl": "/images/wmn1.png",
       "period": "2019-2021",
-      "teamSize": "12 человек",
-      "mau": "30M+"
+      "teamSize": "7 человек",
+      "mau": "17M+"
     },
     {
       "id": "3",
       "title": "Реферальная программа ProductCamp",
       "category": "Growth",
       "categoryIcon": "📈",
-      "problem": "Низкая органическая регистрация на конференцию. Высокая стоимость привлечения участника через платные каналы.",
-      "solution": "Реферальная система с геймификацией: Telegram-бот, персональные ссылки, лидерборды, награды за топ-рефералов. Интеграция с сайтом и рассылками.",
+      "problem": "Неконтролруемый процесс регистраций через Сарафанное радио. Низкая вовлеченность амбасадоров. Првлечение новых каналов регистрации: комьюнити, тг-каналы, эйчары",
+      "solution": "Реферальная система с геймификацией: Telegram-бот, персональные ссылки, лидерборды, награды для топов. Интеграция с сайтом и рассылками.",
       "metrics": [
         {
           "name": "Регистрации через рефералки",
           "before": "5%",
-          "after": "20%",
-          "change": "+15%",
-          "positive": true
-        },
-        {
-          "name": "CAC (стоимость привлечения)",
-          "before": "1500 ₽",
-          "after": "600 ₽",
-          "change": "-60%",
+          "after": "22%",
+          "change": "+17%",
           "positive": true
         },
         {
@@ -265,7 +252,7 @@
           "positive": true
         }
       ],
-      "insights": "Геймификация и лидерборды создали здоровую конкуренцию. 20% регистраций осенью 2025 — через реферальную программу.",
+      "insights": "Геймификация и лидерборды создали здоровую конкуренцию. 22% регистраций осенью 2025 — через реферальную программу.",
       "skills": [
         "Growth",
         "Gamification",
@@ -274,14 +261,14 @@
         "Referral Programs"
       ],
       "imageUrl": "/images/pc1.png",
-      "period": "2022-2025",
+      "period": "2023-2025",
       "teamSize": "4 человека",
       "mau": "N/A"
     }
   ],
   "badminton": {
     "text": "Я играю в бадминтон на полу-профессиональном уровне и выступаю на соревнованиях. Играю в одиночных и парных разрядах, но больше люблю одиночки. Занимаюсь у крутых именитых тренеров. И вообще, очень люблю эту игру!",
-    "btnText": "Позвать меня на спарринг",
+    "btnText": "Записаться на тренировку",
     "btnLink": "https://t.me/mnikolashin"
   },
   "edu": {
@@ -300,32 +287,92 @@
   },
   "skills": {
     "product": [
-      { "name": "Product Strategy", "level": 95 },
-      { "name": "Roadmapping", "level": 90 },
-      { "name": "OKR / KPI", "level": 90 },
-      { "name": "Metrics & Analytics", "level": 95 },
-      { "name": "A/B Testing", "level": 85 },
-      { "name": "CJM / UX Research", "level": 85 }
+      {
+        "name": "Product Strategy",
+        "level": 95
+      },
+      {
+        "name": "Roadmapping",
+        "level": 90
+      },
+      {
+        "name": "OKR / KPI",
+        "level": 90
+      },
+      {
+        "name": "Metrics & Analytics",
+        "level": 95
+      },
+      {
+        "name": "A/B Testing",
+        "level": 85
+      },
+      {
+        "name": "CJM / UX Research",
+        "level": 85
+      }
     ],
     "technical": [
-      { "name": "SQL", "level": 80 },
-      { "name": "Python (Data)", "level": 70 },
-      { "name": "Event-based Tracking", "level": 90 },
-      { "name": "ML/AI Product", "level": 85 },
-      { "name": "API / Integrations", "level": 80 }
+      {
+        "name": "SQL",
+        "level": 80
+      },
+      {
+        "name": "Python (Data)",
+        "level": 70
+      },
+      {
+        "name": "Event-based Tracking",
+        "level": 90
+      },
+      {
+        "name": "ML/AI Product",
+        "level": 85
+      },
+      {
+        "name": "API / Integrations",
+        "level": 80
+      }
     ],
     "design": [
-      { "name": "UX/UI Design", "level": 85 },
-      { "name": "Design Systems", "level": 80 },
-      { "name": "Prototyping", "level": 85 },
-      { "name": "Figma", "level": 75 }
+      {
+        "name": "UX/UI Design",
+        "level": 85
+      },
+      {
+        "name": "Design Systems",
+        "level": 80
+      },
+      {
+        "name": "Prototyping",
+        "level": 85
+      },
+      {
+        "name": "Figma",
+        "level": 75
+      }
     ],
     "growth": [
-      { "name": "Growth Hacking", "level": 85 },
-      { "name": "Retention", "level": 90 },
-      { "name": "Monetization", "level": 90 },
-      { "name": "Viral Mechanics", "level": 80 },
-      { "name": "Community Building", "level": 85 }
+      {
+        "name": "Growth Hacking",
+        "level": 85
+      },
+      {
+        "name": "Retention",
+        "level": 90
+      },
+      {
+        "name": "Monetization",
+        "level": 90
+      },
+      {
+        "name": "Viral Mechanics",
+        "level": 80
+      },
+      {
+        "name": "Community Building",
+        "level": 85
+      }
     ]
   },
   "aboutpara": "Senior Product Manager с 10+ годами опыта в медиа и B2C-продуктах. Специализируюсь на ML-рекомендациях, growth-маркетинге и монетизации. Ищу роли Senior PM / Lead PM в медиа, развлечениях или B2C-продуктах.",
@@ -360,8 +407,19 @@
       "universityDate": "2019 - 2021",
       "universityPara": "Преподаватель продуктового менеджмента. Наставник для стартапов. Многие студенты получили офферы в крупных компаниях."
     },
-    "languages": ["Русский (Native)", "English (B2)"],
-    "frameworks": ["Product Discovery", "Lean Startup", "Agile/Scrum"],
-    "others": ["Public Speaking", "Mentoring", "Sound Design"]
+    "languages": [
+      "Русский (Native)",
+      "English (B2)"
+    ],
+    "frameworks": [
+      "Product Discovery",
+      "Lean Startup",
+      "Agile/Scrum"
+    ],
+    "others": [
+      "Public Speaking",
+      "Mentoring",
+      "Sound Design"
+    ]
   }
 }

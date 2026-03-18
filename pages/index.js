@@ -107,7 +107,7 @@ export default function Home() {
         textLast.current,
       ],
       { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
-      { y: 0, x: 0, transform: "scale(1)" }
+      { y: 0, x: 0, transform: "scale(1)" },
     );
   }, []);
 
@@ -148,104 +148,36 @@ export default function Home() {
               >
                 {data.headerTaglineZero}
               </h1>
-              <ul className="mt-4 text-lg laptopl:text-1xl p-1 tablet:p-2 list-inside list-disc laptop:list-outside laptop:w-4/5">
-                <li ref={textThree}>{data.headerTaglineThree}</li>
-                <li ref={textFour}>{data.headerTaglineFour}</li>
-                <li ref={textFive}>{data.headerTaglineFive}</li>
-                <li ref={textSix}>{data.headerTaglineSix}</li>
-                <li ref={textSeven}>{data.headerTaglineSeven}</li>
-              </ul>
-              <h4
-                ref={textLast}
-                className="text-base italic tablet:text-base laptop:text-base laptopl:text-lg p-1 tablet:p-2 w-full laptop:w-4/5
+
+              <div className="mt-2 mb-2">
+                <div className="flex flex-wrap gap-2">
+                  {data.targetIndustries.map((industry, idx) => (
+                    <span
+                      key={idx}
+                      className="px-3 py-1 text-sm rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300"
+                    >
+                      {industry}
+                    </span>
+                  ))}
+                </div>
+
+                <ul className="mt-4 text-lg laptopl:text-1xl p-1 tablet:p-2 list-inside list-disc laptop:list-outside laptop:w-4/5">
+                  <li ref={textThree}>{data.headerTaglineThree}</li>
+                  <li ref={textFour}>{data.headerTaglineFour}</li>
+                  <li ref={textFive}>{data.headerTaglineFive}</li>
+                  <li ref={textSix}>{data.headerTaglineSix}</li>
+                  <li ref={textSeven}>{data.headerTaglineSeven}</li>
+                </ul>
+                <h4
+                  ref={textLast}
+                  className="text-base italic tablet:text-base laptop:text-base laptopl:text-lg p-1 tablet:p-2 w-full laptop:w-4/5
               "
-              >
-                {data.headerTaglineLast}
-              </h4>
-            </div>
-
-            <Socials className="mt-4 laptop:mt-6" />
-          </div>
-
-          {/* Cases Section */}
-          <div
-            className="mt-10 laptop:mt-20 p-2 laptop:p-0 laptop:mx-20"
-            ref={casesRef}
-          >
-            <h2 className="text-3xl laptop:text-5xl text-bold mb-2">Кейсы</h2>
-            <p className="text-base laptop:text-lg text-gray-600 dark:text-gray-400 mb-8 laptop:w-3/5">
-              3 ключевых проекта с измеримыми результатами
-            </p>
-
-            <div className="grid grid-cols-1 laptop:grid-cols-2 gap-6">
-              {data.cases.map((caseItem) => (
-                <CaseCard key={caseItem.id} caseData={caseItem} />
-              ))}
-            </div>
-          </div>
-
-          {/* Skills Section */}
-          <div
-            className="mt-10 laptop:mt-20 p-2 laptop:p-0 laptop:mx-20"
-            ref={skillsRef}
-          >
-            <h2 className="text-3xl laptop:text-5xl text-bold mb-2">Навыки</h2>
-            <p className="text-base laptop:text-lg text-gray-600 dark:text-gray-400 mb-8 laptop:w-3/5">
-              Ключевые компетенции для создания продуктов мирового уровня
-            </p>
-
-            {data.skills && <SkillsSection skills={data.skills} />}
-          </div>
-
-          {/* About Section */}
-          <div
-            className="mt-10 laptop:mt-20 p-2 laptop:p-0 laptop:mx-20"
-            ref={aboutRef}
-          >
-            <h2 className="text-3xl laptop:text-5xl text-bold mb-6">Обо мне</h2>
-            <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-800">
-              <p className="text-lg laptop:text-xl text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-                {data.elevatorPitch}
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                <div>
-                  <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">
-                    Целевые роли
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {data.targetRoles.map((role, idx) => (
-                      <span
-                        key={idx}
-                        className="px-3 py-1 text-sm rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300"
-                      >
-                        {role}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                <div>
-                  <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">
-                    Индустрии
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {data.targetIndustries.map((industry, idx) => (
-                      <span
-                        key={idx}
-                        className="px-3 py-1 text-sm rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300"
-                      >
-                        {industry}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+                >
+                  {data.headerTaglineLast}
+                </h4>
               </div>
 
-              {data.resumePdfUrl && (
-                <div className="pt-6 border-t border-gray-100 dark:border-gray-800">
-                  <ResumeDownload pdfUrl={data.resumePdfUrl} />
-                </div>
-              )}
+              <Socials className="mt-4 laptop:mt-6" />
             </div>
           </div>
 
@@ -253,24 +185,7 @@ export default function Home() {
             className="mt-10 laptop:mt-30 p-2 laptop:p-0 laptop:mx-20"
             ref={workRef}
           >
-            <h2 className="text-3xl laptop:text-5xl text-bold">
-              Мои проекты и работа
-            </h2>
-
-            <h3 className="text-2xl pt-3 text-bold mt-4 laptop:mt-8">
-              Компетенции
-            </h3>
-            <ul className="mt-2 text-base laptopl:text-lg list-inside list-disc laptop:list-outside laptop:w-4/5">
-              {data.powers.map((e, key) => (
-                <li key={key} className="p-1">
-                  {e}
-                </li>
-              ))}
-            </ul>
-
-            <h3 className="text-2xl pt-3 text-bold mt-4 laptop:mt-8">
-              Проекты
-            </h3>
+            <h2 className="text-3xl laptop:text-5xl text-bold">Мои проекты</h2>
 
             <div className="mt-4 laptop:mt-6 grid grid-cols-1 tablet:grid-cols-2 gap-4">
               {data.projects.map((project) => (
@@ -283,41 +198,20 @@ export default function Home() {
                 />
               ))}
             </div>
-          </div>
 
-          <div
-            className="mt-6 laptop:mt-20 p-2 laptop:p-0 laptop:mx-20"
-            ref={edu}
-          >
-            <h1 className="text-3xl laptop:text-5xl text-bold">
-              Консалтинг, менторство и преподавание
-            </h1>
-            <p className="mt-4 text-base laptop:text-lg w-full laptop:w-3/5">
-              {data.edu.first}
-            </p>
-            <p className="mt-4 text-base laptop:text-lg w-full laptop:w-3/5">
-              {data.edu.second}
-            </p>
-            <p className="mt-8 text-lg laptop:text-2xl w-full laptop:w-3/5">
-              {data.edu.third}
-            </p>
-            <ul className="mt-4 text-base laptopl:text-lg list-inside list-disc laptop:list-outside laptop:w-4/5">
-              {data.edu.list.map((e, key) => (
-                <li key={key} className="p-1">
-                  {e}
-                </li>
-              ))}
-            </ul>
-            <div>
-              <Button
-                className="relative"
-                type="primary"
-                onClick={() => window.open(data.edu.btnLink)}
-              >
-                {data.edu.btnText}
-              </Button>
+            {/* Кейсы */}
+            <div className="mt-10 laptop:mt-16">
+              <h3 className="text-2xl laptop:text-3xl text-bold mb-6">
+                Ключевые кейсы
+              </h3>
+              <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-6">
+                {data.cases.map((caseItem) => (
+                  <CaseCard key={caseItem.id} caseData={caseItem} />
+                ))}
+              </div>
             </div>
           </div>
+
           <div
             className="mt-6 laptop:mt-20 p-2 laptop:p-0 laptop:mx-20"
             ref={crativeRef}
