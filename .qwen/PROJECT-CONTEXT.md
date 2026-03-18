@@ -1,17 +1,17 @@
 # 📚 Project Context — Michael Nikolashin Portfolio
 
-**Версия:** 1.0  
-**Последнее обновление:** 18 марта 2026  
-**Статус:** Фаза 0 ✅ завершена, Фаза 1 ✅ завершена (ожидает контента)
+**Версия:** 1.1
+**Последнее обновление:** 18 марта 2026
+**Статус:** Фаза 0 ✅ завершена, Фаза 1 ✅ завершена (закоммичено и запушено)
 
 ---
 
 ## 🎯 О проекте
 
-**Портфолио для:** Senior Product Manager (Mikhail Nikolashin)  
-**Цель:** Позиционирование для ролей с зарплатой от 400к ₽  
-**Стек:** Next.js 12, TailwindCSS 3, GSAP 3, next-themes  
-**Деплой:** Netlify  
+**Портфолио для:** Senior Product Manager (Mikhail Nikolashin)
+**Цель:** Позиционирование для ролей с зарплатой от 400к ₽
+**Стек:** Next.js 14.2.3, TailwindCSS 3, GSAP 3, next-themes
+**Деплой:** Netlify
 **Домен:** michael-nikolashin.ru
 
 ### Ключевые кейсы (3 штуки)
@@ -37,7 +37,7 @@
 
 ---
 
-### ✅ Фаза 1: Кейсы для рекрутеров (Завершена, ожидает контента)
+### ✅ Фаза 1: Кейсы для рекрутеров (Завершена 18 марта 2026)
 
 **Задачи:**
 - [x] Обновить portfolio.json (3 кейса)
@@ -46,24 +46,36 @@
 - [x] Создать SkillsSection компонент
 - [x] Создать ResumeDownload компонент
 - [x] Интеграция в index.js
-- [ ] Финальная проверка контента (Product Owner)
+- [x] Финальная проверка контента (Product Owner)
+- [x] Dark mode дизайн (Designer Agent)
+- [x] Dark mode реализация
+- [x] next-themes настройка (attribute="class", defaultTheme="dark")
 
 **Компоненты созданы:**
 ```
 components/
 ├── CaseCard/
-│   └── CaseCard.js       # Карточка кейса с метриками
+│   └── CaseCard.js       # ✅ Карточка кейса с метриками + dark mode
 ├── MetricsBar/
-│   └── MetricsBar.js     # Визуализация до/после
+│   └── MetricsBar.js     # ✅ Визуализация до/после + dark mode
 ├── SkillsSection/
-│   └── SkillsSection.js  # Навыки по категориям
+│   └── SkillsSection.js  # ✅ Навыки по категориям + dark mode
 ├── ResumeDownload/
-│   └── ResumeDownload.js # Кнопка скачивания PDF
+│   └── ResumeDownload.js # ✅ Кнопка скачивания PDF
 └── Header/
-    └── index.js          # Обновлена навигация
+    └── index.js          # ✅ Обновлена навигация (Cases scroll)
 ```
 
-**Ветка:** `phase1/cases-section` (готова к merge после проверки контента)
+**Ветка:** `phase1/cases-section` ✅ Закоммичено и запушено (commit 7185c96)
+
+**Результат Фазы 1:**
+- ✅ 3 кейса с метриками отображаются в секции "Ключевые кейсы"
+- ✅ Полная поддержка dark mode (glassmorphism effect, backdrop-blur)
+- ✅ Адаптивность (mobile: 1 колонка, tablet: 2, desktop: 3)
+- ✅ Навигация из Header к секции Cases
+- ✅ Удалены неиспользуемые файлы (pages/api, pages/blog)
+- ✅ Исправлены зависимости (Next.js 14.2.3, React 18.3.1)
+- ✅ Настроена корректная работа next-themes
 
 ---
 
