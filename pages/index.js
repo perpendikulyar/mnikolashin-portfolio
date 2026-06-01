@@ -15,6 +15,7 @@ import AppHead from "../components/AppHead";
 // Local Data
 import data from "../data/portfolio.json";
 import { generateMetadata } from "../utils/yandex-metrika-tracker/generateMetadata";
+import Image from "next/image";
 
 export default function Home() {
   // Ref
@@ -92,6 +93,8 @@ export default function Home() {
     });
   };
 
+  const portraitImg = "/images/portrait.png";
+
   useIsomorphicLayoutEffect(() => {
     stagger(
       [
@@ -128,7 +131,19 @@ export default function Home() {
             handleEduScroll={handleEduScroll}
           />
           <div className="laptop:mt-20 mt-10 laptop:mx-20 mx-2">
-            <div className="mt-5">
+            <div className="portrait z-0 w-auto laptop:absolute laptop:top-24 laptop:right-8 ">
+              <Image
+                alt="Михаил Николашин"
+                preload={"true"}
+                width={600}
+                height={240}
+                priority={true}
+                className="block h-full object-cover hover:scale-110 transition-all ease-in-out duration-300 rounded-lg mx-auto w-48 laptop:w-full"
+                src={portraitImg}
+              ></Image>
+              <div class="laptop:absolute inset-0 bg-gradient-to-t laptop:bg-gradient-to-r from-black/75 to-transparent"></div>
+            </div>
+            <div className="mt-5 z-20">
               <h3
                 ref={textOne}
                 className="text-3xl tablet:text-4xl laptop:text-4xl laptopl:text-6xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
@@ -149,7 +164,7 @@ export default function Home() {
               </h1>
 
               <div className="mt-2 mb-2">
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 z-20">
                   {data.targetIndustries.map((industry, idx) => (
                     <span
                       key={idx}

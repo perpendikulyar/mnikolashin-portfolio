@@ -28,31 +28,26 @@
   "headerTaglineZero": "Senior Product Manager, Подкастер, Ментор, Саунд-дизайнер",
   "headerTaglineThree": "10+ лет развиваю медийные продукты и UGC-платформы с аудиторией 10-100M MAU",
   "headerTaglineFour": "Специализация: ML-рекомендации, монетизация, рекламные технологии, growth, продуктовый дизайн",
-  "headerTaglineFive": "Преподаю продакт-менеджмент, менторю продактов креативной индустрии",
+  "headerTaglineFive": "Преподаю продакт-менеджмент: Geekbrains, Казанский Федеральный Университиет, Школа 21. Менторю продактов креативной индустрии",
   "headerTaglineSix": "Делаю подкасты: креативный продюсер, ведущий, саунд-дизайнер",
   "headerTaglineSeven": "Играю в бадминтон и даю уроки",
   "headerTaglineLast": "Москва, Россия",
   "showCursor": false,
   "showBlog": false,
   "darkMode": true,
-  "showResume": true,
+  "showResume": false,
   "resumePdfUrl": "/resume.pdf",
   "hhProfileUrl": "",
   "linkedinUrl": "",
   "socials": [
     {
       "id": "1",
-      "title": "Telegram",
+      "title": "Написать в TG",
       "link": "https://t.me/mnikolashin"
     },
     {
-      "id": "2",
-      "title": "Подкаст Кита и Грома",
-      "link": "https://st.zvuk.com/podkast-kita-i-groma"
-    },
-    {
       "id": "3",
-      "title": "Email",
+      "title": "На почту",
       "link": "mailto:perpendikulyar@gmail.com"
     }
   ],
@@ -129,7 +124,7 @@
       "title": "ProductCamp Podcast",
       "img": "/images/pc-podcast.png",
       "description": "Подкаст-интервью с продакт-менеджерами, которые развивают крутые продукты",
-      "work": "Монтаж и сведение, саунд-дизайн, музыка",
+      "work": "Продюсирование, сценарии, монтаж и сведение, саунд-дизайн, музыка",
       "url": "https://productcamppodcast.mave.digital/?utm_source=michael_nikolashin_portfolio"
     },
     {

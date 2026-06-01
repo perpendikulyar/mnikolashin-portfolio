@@ -128,7 +128,7 @@ const Header = ({
                       onClick={() => router.push("/resume")}
                       classes="first:ml-1"
                     >
-                      Resume
+                      Резюме
                     </Button>
                   )}
 
@@ -137,7 +137,7 @@ const Header = ({
                       window.open("mailto:perpendikulyar@gmail.com")
                     }
                   >
-                    Contact
+                    Написать
                   </Button>
                 </div>
               )}
@@ -170,7 +170,7 @@ const Header = ({
                 onClick={() => router.push("/resume")}
                 classes="first:ml-1"
               >
-                Resume
+                Резюме
               </Button>
             )}
 
@@ -204,14 +204,14 @@ const Header = ({
                 onClick={() => router.push("/resume")}
                 classes="first:ml-1"
               >
-                Resume
+                Резюме
               </Button>
             )}
 
             <Button
               onClick={() => window.open("mailto:perpendikulyar@gmail.com")}
             >
-              Contact
+              Написать
             </Button>
 
             {mounted && theme && data.darkMode && (
