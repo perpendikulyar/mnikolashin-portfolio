@@ -1,8 +1,40 @@
 # MCP Servers Configuration — Complete Guide
 
-**Last Updated:** 18 March 2026  
-**Project:** Michael Nikolashin Portfolio  
-**Status:** ✅ Ready for Figma Integration
+**Last Updated:** 18 March 2026
+**Project:** Michael Nikolashin Portfolio
+**Status:** ⚠️ Qwen Code does not support MCP — Use standalone API client
+
+---
+
+## ⚠️ Important: Qwen Code MCP Support
+
+**Qwen Code does NOT support MCP servers directly.**
+
+MCP (Model Context Protocol) requires editor-level integration that is only available in:
+
+| Editor | MCP Support |
+|--------|-------------|
+| **Cursor** | ✅ Built-in |
+| **Windsurf** | ✅ Built-in |
+| **VS Code** | ✅ With extension |
+| **Claude Desktop** | ✅ Built-in |
+| **Qwen Code** | ❌ Not supported |
+
+### ✅ Solution for Qwen Code
+
+Use the **standalone Figma API client** instead:
+
+```bash
+# See full documentation
+cat FIGMA-STANDALONE.md
+
+# Quick test
+npm run figma:get-file -- --fileKey=YOUR_FILE_KEY
+```
+
+**Scripts location:**
+- `scripts/figma-api.js` — Direct REST API client
+- `scripts/figma-mcp-server.js` — HTTP/SSE server (advanced)
 
 ---
 
@@ -83,7 +115,7 @@ notepad $env:APPDATA\mcp\servers.json
   "mcpServers": {
     "figma": {
       "command": "npx",
-      "args": ["-y", "@figma/mcp-server"],
+      "args": ["-y", "figma-developer-mcp"],
       "env": {
         "FIGMA_API_TOKEN": "YOUR_TOKEN_HERE"
       }
@@ -91,6 +123,8 @@ notepad $env:APPDATA\mcp\servers.json
   }
 }
 ```
+
+**⚠️ Important:** The package name is `figma-developer-mcp` (not `@figma/mcp-server`).
 
 **Replace `YOUR_TOKEN_HERE`** with your actual Figma token from Step 2.
 
@@ -352,7 +386,7 @@ Create separate tokens for:
 
 ## 🔗 Resources
 
-- [Figma MCP Server (npm)](https://www.npmjs.com/package/@figma/mcp-server)
+- [Figma Developer MCP Server (npm)](https://www.npmjs.com/package/figma-developer-mcp)
 - [Figma REST API Docs](https://www.figma.com/developers/api)
 - [MCP Specification](https://modelcontextprotocol.io/)
 - [Figma Access Tokens](https://www.figma.com/developers/api#access-tokens)

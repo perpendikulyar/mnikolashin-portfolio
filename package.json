@@ -15,7 +15,16 @@
     "format:js": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
     "format:json": "prettier --write \"**/*.json\"",
     "format:css": "prettier --write \"**/*.{css,scss}\"",
-    "format:md": "prettier --write \"**/*.md\""
+    "format:md": "prettier --write \"**/*.md\"",
+    "figma:get-file": "node scripts/figma-api.js getFile",
+    "figma:get-node": "node scripts/figma-api.js getNode",
+    "figma:get-styles": "node scripts/figma-api.js getStyles",
+    "figma:get-style": "node scripts/figma-api.js getStyle",
+    "figma:get-comments": "node scripts/figma-api.js getComments",
+    "figma:get-versions": "node scripts/figma-api.js getFileVersions",
+    "figma:get-images": "node scripts/figma-api.js getImageFills",
+    "figma:download-image": "node scripts/figma-api.js downloadImage",
+    "figma:mcp-server": "node scripts/figma-mcp-server.js"
   },
   "dependencies": {
     "@headlessui/react": "^2.0.0",
