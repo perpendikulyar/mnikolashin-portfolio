@@ -8,7 +8,12 @@ export default function BotOrigin() {
         title="Бот-оригин | Михаил Николашин"
         description="Страница проекта бот-оригин. Информация о проекте и его функциональности."
         keywords="бот-оригин, бот, проект, Михаил Николашин"
-        pagePath="/bot-origin/"
+        openGraph={{
+          title: "Бот-оригин | Михаил Николашин",
+          description:
+            "Cтраница проекта бот-оригин. Информация о проекте и его функциональности.",
+        }}
+        pagePath="/bot-origin"
       />
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-4">Бот-оригин</h1>

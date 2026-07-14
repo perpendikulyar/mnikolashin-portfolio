@@ -26,7 +26,7 @@ export function generatePageMetadata({
   const baseUrl = defaultMetadata.canonical;
 
   // Формируем полный URL страницы
-  const pageUrl = canonical || (pagePath ? `${baseUrl}${pagePath}` : baseUrl);
+  const pageUrl = canonical || (pagePath ? `${baseUrl}${pagePath}/` : baseUrl);
 
   return {
     title: title || defaultMetadata.title,
