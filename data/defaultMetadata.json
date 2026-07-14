@@ -1,0 +1,15 @@
+{
+  "name": "Михаил Николашин",
+  "title": "Михаил Николашин — Senior Product Manager | Media, Etertaiment, Creative Tech",
+  "description": "10+ лет в медиа. ML-рекомендации, Growth, UX/UI. LiveJournal, Woman.ru, ProductCamp. Senior PM / Lead PM в медиа и B2C продуктах",
+  "keywords": "Senior Product Manager, Менеджер продукта, Media, B2C, ML, Recommendations, Growth, UX/UI, LiveJournal, Woman.ru",
+  "openGraph": {
+    "title": "Михаил Николашин — Senior Product Manager | Media, Etertaiment, Creative Tech",
+    "description": "10+ лет в медиа. ML-рекомендации, Growth, UX/UI. LiveJournal, Woman.ru, ProductCamp. Senior PM / Lead PM в медиа и B2C продуктах"
+  },
+  "canonical": "https://michael-nikolashin.ru",
+  "ogImage": "/images/og-image.png",
+  "twitterCard": "summary_large_image",
+  "themeColor": "#3B82F6",
+  "locale": "ru_RU"
+}
