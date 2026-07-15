@@ -58,7 +58,7 @@ const MetricsBar = ({ metric }) => {
         </div>
 
         {/* Arrow */}
-        <div className="flex-shrink-0 pt-4">
+        <div className="shrink-0 pt-4">
           <svg
             className="w-4 h-4 text-gray-400"
             fill="none"
@@ -83,8 +83,8 @@ const MetricsBar = ({ metric }) => {
             <div
               className={`h-full transition-all duration-500 ${
                 positive
-                  ? "bg-gradient-to-r from-green-400 to-green-500"
-                  : "bg-gradient-to-r from-red-400 to-red-500"
+                  ? "bg-linear-to-r from-green-400 to-green-500"
+                  : "bg-linear-to-r from-red-400 to-red-500"
               }`}
               style={{ width: `${afterWidth}%` }}
             />

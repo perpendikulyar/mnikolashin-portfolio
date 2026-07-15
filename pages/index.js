@@ -141,7 +141,7 @@ export default function Home() {
                 className="block h-full object-cover hover:scale-110 transition-all ease-in-out duration-300 rounded-lg mx-auto w-48 laptop:w-full"
                 src={portraitImg}
               ></Image>
-              <div class="laptop:absolute inset-0 bg-gradient-to-t laptop:bg-gradient-to-r from-black/75 to-transparent"></div>
+              <div class="laptop:absolute inset-0 bg-linear-to-t laptop:bg-linear-to-r from-black/75 to-transparent"></div>
             </div>
             <div className="mt-5 z-20">
               <h3

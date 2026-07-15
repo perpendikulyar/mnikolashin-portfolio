@@ -16,7 +16,7 @@ const SkillBar = ({ name, level }) => {
       </div>
       <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
         <div
-          className="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full transition-all duration-700 ease-out"
+          className="h-full bg-linear-to-r from-purple-500 to-pink-500 rounded-full transition-all duration-700 ease-out"
           style={{ width: `${level}%` }}
         />
       </div>
@@ -127,7 +127,7 @@ const SkillsSection = ({ skills }) => {
           {/* Category Header */}
           <div className="flex items-center gap-3 mb-4">
             <div
-              className={`p-2 rounded-lg bg-gradient-to-br ${category.color} text-white`}
+              className={`p-2 rounded-lg bg-linear-to-br ${category.color} text-white`}
             >
               {category.icon}
             </div>

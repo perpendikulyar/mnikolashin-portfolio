@@ -23,9 +23,9 @@ const CaseCard = ({ caseData }) => {
   } = caseData;
 
   return (
-    <div className="group relative bg-white dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-md dark:shadow-lg hover:shadow-xl dark:hover:shadow-purple-500/20 hover:-translate-y-1 transition-all duration-300 overflow-hidden border border-gray-200/10 dark:border-gray-700/50">
+    <div className="group relative bg-white dark:bg-gray-800/80 backdrop-blur-xs rounded-2xl shadow-md dark:shadow-lg hover:shadow-xl dark:hover:shadow-purple-500/20 hover:-translate-y-1 transition-all duration-300 overflow-hidden border border-gray-200/10 dark:border-gray-700/50">
       {/* Gradient overlay on hover */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+      <div className="absolute inset-0 bg-linear-to-br from-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
       {/* Header with Image */}
       <div className="relative h-48 overflow-hidden">
@@ -35,11 +35,11 @@ const CaseCard = ({ caseData }) => {
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-300"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
 
         {/* Category Badge */}
         <div className="absolute top-4 left-4">
-          <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm border border-gray-200/20 dark:border-gray-600/30 text-gray-800 dark:text-gray-100">
+          <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium bg-white/95 dark:bg-gray-800/95 backdrop-blur-xs border border-gray-200/20 dark:border-gray-600/30 text-gray-800 dark:text-gray-100">
             <span>{categoryIcon}</span>
             {category}
           </span>

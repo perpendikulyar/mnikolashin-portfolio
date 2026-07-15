@@ -105,7 +105,7 @@ export default function BotOrigin() {
   return (
     <>
       <AppHead {...pageParams} />
-      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-slate-900 dark:to-slate-800">
+      <div className="min-h-screen bg-linear-to-b from-blue-50 to-white dark:from-slate-900 dark:to-slate-800">
         {/* Hero Section */}
         <div className="container mx-auto px-4 py-16 laptop:py-24">
           <div className="flex flex-col laptop:flex-row items-center gap-12 laptop:gap-20">
@@ -150,7 +150,7 @@ export default function BotOrigin() {
                   priority
                 />
               </div>
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-r from-blue-400 to-purple-500 rounded-full blur-3xl opacity-20 -z-10"></div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-linear-to-r from-blue-400 to-purple-500 rounded-full blur-3xl opacity-20 -z-10"></div>
             </div>
           </div>
         </div>
@@ -217,7 +217,7 @@ export default function BotOrigin() {
                 key={plan.id}
                 className={`relative p-8 rounded-2xl transition-all duration-300 hover:shadow-2xl ${
                   plan.recommended
-                    ? "bg-gradient-to-br from-blue-500 to-purple-600 text-white scale-105 shadow-2xl"
+                    ? "bg-linear-to-br from-blue-500 to-purple-600 text-white scale-105 shadow-2xl"
                     : "bg-white dark:bg-slate-800"
                 }`}
               >
