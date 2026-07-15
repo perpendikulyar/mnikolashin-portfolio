@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import Image from "next/image";
 
 import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
@@ -14,8 +15,6 @@ import AppHead from "../components/AppHead";
 
 // Local Data
 import data from "../data/portfolio.json";
-import { generateMetadata } from "../utils/yandex-metrika-tracker/generateMetadata";
-import Image from "next/image";
 
 export default function Home() {
   // Ref

@@ -25,7 +25,8 @@ const botPlans = [
     id: "advanced",
     title: "Продвинутый бот",
     price: "от 50 000 ₽",
-    description: "Для серьезного бизнеса. Расширенные возможности персонализации.",
+    description:
+      "Для серьезного бизнеса. Расширенные возможности персонализации.",
     features: [
       "Сложная база данных и сегментация",
       "Персонализация для каждого пользователя",
@@ -60,19 +61,22 @@ const aiFeatures = [
   {
     id: 1,
     title: "ИИ-ассистент",
-    description: "Интеграция с современными LLM моделями для создания умного ассистента.",
+    description:
+      "Интеграция с современными LLM моделями для создания умного ассистента.",
     icon: "🧠",
   },
   {
     id: 2,
     title: "Анализ данных",
-    description: "Автоматический анализ поведения пользователей и генерация инсайтов.",
+    description:
+      "Автоматический анализ поведения пользователей и генерация инсайтов.",
     icon: "📊",
   },
   {
     id: 3,
     title: "Генерация контента",
-    description: "ИИ для создания текстов, описаний и рекомендаций в реальном времени.",
+    description:
+      "ИИ для создания текстов, описаний и рекомендаций в реальном времени.",
     icon: "✍️",
   },
   {
@@ -93,11 +97,14 @@ export default function BotOrigin() {
 
   const pageParams = {
     title: "Создание Telegram и Max ботов | Автоматизация бизнеса",
-    description: "Создаем Telegram и Max ботов для автоматизации бизнеса: базовые, продвинутые и кастомные решения. Быстрый запуск менее 24 часов.",
-    keywords: "бот телеграм, бот макс, чат бот, автоматизация бизнеса, telegram bot, max bot, создание бота",
+    description:
+      "Создаем Telegram и Max ботов для автоматизации бизнеса: базовые, продвинутые и кастомные решения. Быстрый запуск менее 24 часов.",
+    keywords:
+      "бот телеграм, бот макс, чат бот, автоматизация бизнеса, telegram bot, max bot, создание бота",
     openGraph: {
       title: "Создание Telegram и Max ботов | Автоматизация бизнеса",
-      description: "Создаем Telegram и Max ботов для автоматизации бизнеса: базовые, продвинутые и кастомные решения.",
+      description:
+        "Создаем Telegram и Max ботов для автоматизации бизнеса: базовые, продвинутые и кастомные решения.",
     },
     pagePath: "/bot-origin/",
   };
@@ -105,7 +112,7 @@ export default function BotOrigin() {
   return (
     <>
       <AppHead {...pageParams} />
-      <div className="min-h-screen bg-linear-to-b from-blue-50 to-white dark:from-slate-900 dark:to-slate-800">
+      <div className="min-h-screen bg-sabbia-bianca dark:bg-marina-notte">
         {/* Hero Section */}
         <div className="container mx-auto px-4 py-16 laptop:py-24">
           <div className="flex flex-col laptop:flex-row items-center gap-12 laptop:gap-20">
@@ -156,7 +163,10 @@ export default function BotOrigin() {
         </div>
 
         {/* Features Section */}
-        <div id="features" className="container mx-auto px-4 py-16 laptop:py-24">
+        <div
+          id="features"
+          className="container mx-auto px-4 py-16 laptop:py-24"
+        >
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl laptop:text-5xl font-bold mb-6">
               Почему выбирают нас?
